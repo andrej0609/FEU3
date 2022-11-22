@@ -5,15 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>12 Paskaita - Kitos CSS temos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="Styles/index.css">
 </head>
 <body>
   <!--
     Git ir Github
     Puslapio prieinamumas (accessability) (teoriškai trumpai, gale praktika)
-    Preprocessoriai
+    Preprocessoriai (SCSS , SASS)
+    CSS Frameworks
   -->
   <section id="git">
+    <h1>GitHub</h1>
     <ul>
       <li>
         git config --global user.name andrej0609
@@ -32,5 +35,114 @@
       </li>
     </ul>
   </section>
+  <section id="accessibility">
+    <h1>Accessibility</h1>
+    <ul>
+      <li>Suvokiamumas</li>
+      <li>Veiksmumas</li>
+      <li>Suprantamumas</li>
+      <li>Tvirtumas</li>
+    </ul>
+    <p>
+      Puslapių pritaikymas žmonėms su negalia. Pvz.: regejimo, klausos...
+    </p>
+    <p>
+      Visi standartai yra aprašyti <a href="https://www.w3.org/WAI/" target="_blank"> Čia</a>
+    </p>
+    <p>
+      Automatinių skaitytuvaų <a href="https://www.webaim.org/projects/screenreadersurvey8" target="_blank">Apklausa</a>.<br>
+      Kas yra automatinis skaitytuvas <a href="https://youtu.be/dEbl5jvLKGQ" target="_blank">video</a>
+    </p>
+    <p>
+      Alternativus tekstai paveiksliukams ir video <a href="" target="_blank">info</a>
+    </p>
+    <p>
+      ARIA atributai ir ju nauda <a href="" target="_blank"> info</a>
+    </p>
+    <p>
+      Prisitaikymas prie vartotojo irenginio <a href="" target="_blank"></a>
+    </p>
+    <p>
+      Meta tag'ai nusako svetaines informacija <a href="" target="_blank">info</a>
+    </p>
+  </section>
+  <section id="preprocessors">
+    <h1>Preprocessoriai</h1>
+    <div>
+      <h3>
+        SASS / SCSS
+      </h3>
+      <p>
+        Suteikia galimybe rašyti CSS'a naujoviškesniu budu, kur galima lengvai kurti ir naudoti kintamosius; nest'inti; rašyti: funkcijas, salygas, ciklus, mix-in'us ir t.t.<br>
+        Naudojant kažkuri CSS preprocessoriu, reikia parašyta koda konvertuoti i paprasta CSS'a, kuri supranta svetaine.
+      </p>
+    </div>
+  </section>
+  <section id="CSS_frameworks">
+    <h1>CSS frameworks</h1>
+    <ul>
+      <li>Tailwind</li>
+      <li>Bootstrap</li>
+      <li>Bulma</li>
+      <li>UI Kit</li>
+      <li>Materialize</li>
+      <li>Milligram</li>
+      <li>Foundation</li>
+      <li>...</li>
+    </ul>
+   <div class="twoCols">
+    <div>
+      <h3>Pros</h3>
+      <ul>
+        <li>Nereikia/labaiMažai rašyti CSS</li>
+        <li>Pagreitina darba</li>
+        <li>Lengva naudoti</li>
+        <li>Supragramuoti responsiveness</li>
+      </ul>
+      <div>
+        <h3>Cons</h3>
+        <ul>
+          <li>Neunikalus dizainas</li>
+          <li>Labai daug nenaudojamo kodo lieka</li>
+          <li>Reikalauja laiko išmokti naudotis</li>
+          <li>Prastesnis Google Paieškos sistemos ivertinimas</li>
+        </ul>
+      </div>
+    </div>
+   </div>
+   <p>
+    <strong>CSS Framework</strong> - kažkieno kito parašytas CSS kodas, kuri tu gali naudoti.<br>
+    Norint nauduoti kažkieno framework'a,reikia ji prijungti prie savo kodo (CSN).<br>
+    Dauguma framework'u veikia suteikiant ju aprašytas klases kažkokiems HTML elementams. <br>
+    Yra <a>Classless</a> CSS framework'u. Juos naudojant, nereikia suteikti klasiu jokiems HTML elementams. Viskas aprašyta naudojant tag'u selektorius.
+   </p>
+  </section>
+  <section id="Bootstrap">
+    <div class="container text-center">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>

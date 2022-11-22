@@ -1,0 +1,19 @@
+$big-text: 1.5rem;
+$color-warning: red;
+
+
+
+#preprocessors {
+  h1 {
+    font-size: $big-text;
+  }
+  >div {
+    >h3 {
+      color: $color-warning;
+      font-size: $big-text;
+    }
+    >p {
+      color: $color-warning;
+    }
+  }
+}
