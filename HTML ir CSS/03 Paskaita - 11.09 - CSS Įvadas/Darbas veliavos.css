@@ -1,0 +1,60 @@
+.veliava{
+  width: 200px;
+  height: 50px;
+  background-color: bisque;
+}
+
+.linijinis{
+  display: inline;
+}
+.blokinis{
+  display: block;
+}
+.display_ib{
+  display: inline-block;
+}
+.lietuva{
+  background-color: yellow;
+ 
+}
+.zalia{
+  background-color: green;
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.black{
+  background-color: black;
+}
+.white{
+  background-color: white;
+}
+.lightblue{
+  background-color: lightblue;
+}
+.orange{
+  background-color: orange;
+}
+.wrap{
+  border: 1px solid rgb(0, 0, 0);
+}
+.noTextSize{
+  font-size: 0;
+}
+.w133{
+  width: 75px;
+}
+.h300{
+  height: 150px;
+}
+.lt_flag_lineral_gradient{
+  background-image: linear-gradient(
+    to bottom,
+    yellow 33%,
+    green 33% 66%,
+    red 66%
+  );
+}

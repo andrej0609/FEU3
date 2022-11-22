@@ -1,0 +1,66 @@
+nav {
+  display: flex;
+}
+nav a {
+  flex: 0%;
+}
+section > img,
+section > button,
+section > a {
+  width: 100%;
+  display: inline-block;
+}
+@media screen and (min-width: 40em) {
+  body, main, section {
+    display: flex;
+    }
+  body, section {
+    flex-direction: column;
+  }
+  header, nav {
+    order: -1;
+  }
+}
+main > section {
+  flex: 1; /* is the same as */
+  flex: 1 0 0%;
+}
+main > section {
+  flex: 2;
+}
+main > section:last-of-type {
+  flex: 3;
+}
+main > section > p {
+  flex: 1;
+}
+nav {
+  display: flex;
+}
+section > img, section > button, section a {
+  width: 100%;
+  display: inline-flex;
+}
+nav a {
+  flex: 1;
+}
+
+@media screen and (min-width: 40em) {
+body, main, section {
+  display: flex;
+}
+body, section {
+  flex-direction: column;
+}
+main > section,
+main > section > p {
+  flex: 1;
+}
+header, nav {
+  order: -1;
+}
+}
+body {
+  display: flex;
+  flex-flow: column;
+}

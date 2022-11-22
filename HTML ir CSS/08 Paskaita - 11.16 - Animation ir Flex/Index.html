@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style/Index.css">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    transform
+    transition
+    animation 
+
+    flex
+  -->
+<main>
+  <section id="transform">
+    <h1>Transform</h1>
+    <ul>
+      <li>scale - keičia elemento dydį (default 1)</li>
+      <li>scaleX(x), scaleY(y), scaleZ(z), scale(x,y), scale3d(x,y,z)</li>
+      <li>rotate - pasuka elemenyą (deg)</li>
+      <li>rotateX(x), rotateY(y), rotateZ(z), rotate3d(x,y,z,a)</li>
+      <li>translate - pastumti elementą</li>
+      <li>transleteX(x), translateY(y), translateZ(z), translate(x,y), translate3d(x,y,z)</li>
+      <li>skew - tempia elementą už kampų (deg)</li>
+      <li>skewX(x), skewY(y), skew(x,y)</li>
+      <li>matrix, matrix3d</li>
+      <li>perspective</li>
+    </ul>
+    <div class="kvadratasDidelis tranzicija transformation"></div>
+  </section>
+  <section id="transition">
+    <h1>Tranzicija</h1>
+    <ul>
+      <li>transition-propery - kokie stiliai keičiasi</li>
+      <li>transition-duration - per kiek laiko įvyksta pakeitimai</li>
+      <li>transition-timing-function - kaip tranzicijai paskirstys turimą laiką
+        <ul>
+          <li>ease</li>
+          <li>ease-in</li>
+          <li>ease-uot</li>
+          <li>ease-in-out</li>
+          <li>linear</li>
+          <li>cubiz-bezier</li>
+        </ul>
+      </li>
+      <li>transition-delay - po kiek laiko pradeda vykti pakeitimai</li>
+      <li>transition - junginys visų 4 nustatymų</li>
+    </ul>
+  </section>
+  <section id="animation">
+    <h1>Animacija</h1>
+     <ul>
+      <li>animation-duration - tai animacijai skirtas laiko tarpas</li>
+      <li>animation-timing-function - kaip animacijai paskirstys turimą laiką</li>
+      <li>animation-delay - po kiek laiko prasides animacija</li>
+      <li>animation-iteration-count - kiek sykių vyks animacija</li>
+      <li>animation-direction - animacijos kriptys</li>
+      <li>animation-fill-mode - animacijos pradžios/pabaigos nustatymai</li>
+      <li>animation-play-state - animacijos būsena</li>
+      <li>animation-name - animacijos pavadinimas</li>
+      <li>animation - junginys visų 8 nustatymų</li>
+     </ul> 
+     <p></p>
+     <div class="kvadratasDidelis animacija"></div>
+  </section>
+  <section id="flex">
+    <h1>Display: flex</h1>
+    <ul>
+      <li>flex-direction</li>
+      <li>flex-wrap</li>
+      <li>flex-flow - flex-direction - flex-wrap</li>
+      <li>justify-content - main axis</li>
+      <li>align-items - cross axis</li>
+      <li>align-content - cross axis</li>
+      <li>gap, row-gap, colum-gap - tarpai tarp vaikiniu elementu</li>
+      <li>order</li>
+      <li>flex-grow</li>
+      <li>align-self (su align items)</li>
+    </ul>
+    <hr>
+    <div class="flexContainer">
+      <div class="kvadratas">1</div>
+      <div class="kvadratas ">2</div>
+      <div class="kvadratas order2">3</div>
+      <div class="kvadratas">4</div>
+      <div class="kvadratas order1">5</div>
+      <div class="kvadratas ">6</div>
+      <div class="kvadratas ">7</div>
+      <div class="kvadratas order1">8</div>
+      <div class="kvadratas">9</div>
+      <div class="kvadratas alignSelfEnd">10</div>
+      <div class="kvadratas ">11</div>
+      <div class="kvadratas">12</div>
+
+    </div>
+
+  </section>
+</main>
+
+
+</body>
+</html>

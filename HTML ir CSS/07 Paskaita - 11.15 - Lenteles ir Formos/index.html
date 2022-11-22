@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 paskaita - Lentelės ir Formos</title>
+  <link rel="stylesheet" href="Style/indexx.css">
+</head>
+<body>
+  <main>
+    
+    <section id="table2">
+      <div class="container">
+        <h1>Register to Fancy Form</h1>
+        <p>All fields are <span class="required">required</span> unless marked as "optional"</p>
+        <form>
+          <div>
+              <label for="read-only">Your unique ID that you can't change</label><br>
+              <input id="read-only" type="text" name="read-only" value="YBX0123" readonly>
+          </div>
+          <div>
+              <label for="email">Email:</label><br>
+              <input id="email" type="email" name="email" required>
+          </div>
+          <div>
+              <label for="password">Password:</label><br>
+              <input id="password" type="password" name="password" minlength="6" maxlength="24" required>
+          </div>
+          <div>
+              <label for="age">Age:</label><br>
+              <input id="age" type="number" name="age" min="18" max="65" required>
+          </div>
+          <div>
+              <label for="about">Tell us a little about yourself <small>(optional)</small>:</label><br>
+              <textarea id="about" name="about"></textarea>
+          </div>
+          <div>
+              <input id="terms" type="checkbox" name="terms" value="1" required>
+              <label for="terms">I agree with the Terms & Conditions</label>
+          </div>
+          <button class="submit-button">Register</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

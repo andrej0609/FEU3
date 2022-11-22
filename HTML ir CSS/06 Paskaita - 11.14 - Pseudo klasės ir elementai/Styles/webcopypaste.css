@@ -1,0 +1,68 @@
+
+
+body {
+  background-color: rgb(130, 129, 129);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.logo{
+ position:relative;
+ left: 35%;
+}
+aside{
+  background-color: #24282c;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+main{
+  background-color: white;
+  position: relative;
+  margin-left: 250px;
+}
+.FavMov{
+  font-size: xx-larges;
+}
+.why > li{
+  font-size: larger;
+  color: white;
+}
+
+.why2{
+  font-size: larger;
+  color: white;
+}
+h1{
+  color: white;
+  font-size: 35px;
+}
+.coll{
+  font-size: 20px;
+  color: white;
+  
+}
+li::marker{
+  color: red;
+}
+li{
+  color: white;
+}
+header{
+  float: right;
+}
+nav{
+  color: black;
+  text-decoration: none;
+  
+}
+
+.text{
+  color: gray;
+}
+span{
+  padding: 10px;
+  font-size: larger;
+}

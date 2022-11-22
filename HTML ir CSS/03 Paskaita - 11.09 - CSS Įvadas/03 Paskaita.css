@@ -1,0 +1,99 @@
+body{
+  height: 600vh;
+}
+h2{
+  color: rgb(174, 24, 24);
+  background-color: azure;
+  letter-spacing: 5px;
+}
+
+.svarbusTekstas{
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}
+.raudonasTekstas{
+  color: red;
+}
+
+#remeliai{
+  border: 3px dashed rgb(44, 241, 241);
+}
+
+#melynasTekstas{
+  color: blue;
+}
+
+.kvadratas{
+  width: 150px;
+  height: 150px;
+  background-color: beige;
+  border: 2px solid black;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+}
+.linijinis{
+  display: inline;
+}
+.blokinis{
+  display: block;
+}
+.linijinisBlokinis{
+  display: inline-block;
+}
+.wrap{
+  border: 1px solid rgb(0, 0, 0);
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: #d5e58e;
+}
+.yellow{
+  background-color: yellow;
+}
+.h500{
+  height: 500px;
+}
+.bg{
+  background-color: #c3e3ee;
+}
+.size{
+  font-size: 0;
+}
+.t10{
+  top: 10px;
+}
+.r30{
+  right: 30px;
+}
+.b50{
+  bottom: 5px;
+}
+.a180{
+  left: 80px;
+}
+
+.z5{
+  z-index: 5;
+}
+.z10{
+  z-index: 10;
+}
+.static{
+  position: static;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
+}

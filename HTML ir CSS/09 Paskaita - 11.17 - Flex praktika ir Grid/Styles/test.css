@@ -1,0 +1,86 @@
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 2fr 0.5fr 0fr 0.5fr 2fr 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 3fr 1fr 0.5fr repeat(2, 3fr) 1fr 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 2 / 3 / 4 / 5;
+}
+
+.div2 {
+  grid-area: 2 / 6 / 4 / 8;
+}
+
+.div3 {
+  grid-area: 6 / 3 / 8 / 5;
+}
+
+.div4 {
+  grid-area: 6 / 6 / 8 / 8;
+}
+
+.div5 {
+  grid-area: 3 / 2 / 5 / 4;
+  background-color: rgba(202, 205, 207, 0.7);
+  width: 300px;
+  height: 300px;
+}
+
+.div6 {
+  grid-area: 7 / 2 / 9 / 4;
+  background-color: rgba(202, 205, 207, 0.7);
+  width: 300px;
+  height: 300px;
+}
+
+.div7 {
+  grid-area: 7 / 7 / 9 / 9;
+  background-color: rgba(202, 205, 207, 0.7);
+  width: 300px;
+  height: 300px;
+}
+
+.div8 {
+  grid-area: 3 / 7 / 5 / 9;
+  background-color: rgba(202, 205, 207, 0.7);
+  width: 300px;
+  height: 300px;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+h4 {
+  font-size: small;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text {
+  font-size: 10px;
+  color: rgba(93, 93, 94, 0.7);
+}
+
+hr {
+  display: grid;
+  background-color: black;
+  color: black;
+  height: 5px;
+  width: 80px;
+  margin: 20px;
+}

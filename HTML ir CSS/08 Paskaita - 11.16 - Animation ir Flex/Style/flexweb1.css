@@ -1,0 +1,46 @@
+body {
+
+  background-color: #00253f;
+  border: 5px solid white;
+  display: flex;
+  margin: 100px;
+}
+
+.header {
+  margin: 20px;
+}
+
+.h1 {
+  display: flex;
+  color: #83d4bc;
+  font-size: 50px;
+  align-items: flex-start
+}
+
+.par {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.flexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  gap: 10px;
+}
+
+
+.ppp {
+  display: flex;
+  color: white;
+  gap: 0px;
+  font-size: 15px;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  margin: 0px;
+}

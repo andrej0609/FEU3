@@ -1,0 +1,34 @@
+body {
+  width: 750px;
+  margin: 0 auto;
+  padding: 50px;
+  
+  color: #333;
+
+  font-size: 18px;
+  font-family: serif;
+  line-height: 1.5;
+
+  background-color: #ebebeb;
+}
+
+p {
+  margin-top: 0;
+}
+
+.columns-2 {
+  columns: 250px 2;
+  column-gap: 30px;
+  column-rule: 2px solid black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+  vertical-align: middle;
+}
+
+figure {
+  border: 1px solid;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <form id="formosUzduotis">
+    <div>
+        <label for="Vardas">Vardas:</label>
+        <input type="text" id="Vardas" name="Vardas" minlength="1" maxlength="15" required>
+    </div>
+    <div>
+        <label for="Slaptažodis">Slaptažodis:</label>
+        <input type="password" id="pavarde" name="Slaptažodis"  minlength="8" required>
+    </div>
+    <div>
+        <label for="email">El.Paštas:</label>
+        <input type="email" id="email" required>
+    </div>
+    <div>
+        <label for="Lytis"><b>Lytis</b></label>
+    </div>
+    <div>
+        <label for="Vyras">Vyras</label>
+        <input type="radio" name="interest" id="Vyras" value="Vyras">
+        <label for="Moteris">Moteris</label>
+        <input type="radio" name="interest" id="Moteris" value="Moteris">
+    </div>
+    <div>
+        <label for="Komentaras">Komentaras:</label></div>
+    <div>
+        <textarea name="comment" id="comment" cols="30"rows="5"></textarea>
+    </div>
+    <input type="submit" value="Pateikti" />
+</form>
+</div>
+
+
+
+<script>
+    document.querySelector('#formosUzduotis')   // pasirenku elementa su ID "formosUzduotis"
+    .addEventListener('submit',(event) =>{  // laukia "submit" ivykio ir vykdo beverde funkcija
+        event.preventDefault(); // neleidžia formai buti siunčiamai i serveri
+        console.log(event);  // i konsole išveda formos informacija
+        event.target.reset(); // išvalo forma
+     });
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+p.rytoTekstas#hallo{
+  font-weight: bold;
+}
+.rytoTekstas + p{
+  color: red;
+}
+
+p ~ p{
+  background-color: aqua;
+}
+
+h1.heading ~ *{
+  background-color: rgb(134, 131, 131);
+}
+
+/*[href]{
+  color: rgb(204, 8, 8);
+}
+*/
+
+[class*=head]{                     /*pagal žodžio dali*/
+  color: rgb(204, 8, 8);  
+}
+/*
+[class~=irDar]{
+  color: rgb(204, 8, 8);  - Pagal koki nors žodi iš class
+}
+*/
+
+
+a:link{
+  background-color: aqua; /* keičia fona nelankytoms nuorodoms*/
+}
+a:visited{
+  background-color: chartreuse; /* keičia fona lankytoms nuorodoms*/
+}
+a:hover{
+  background-color: green; /* keičia fona kai užvedi pele*/
+}
+a:active{
+  background-color: black; /* keičia fono spalva kai paspaudi*/
+}
+p:empty{
+  height: 10px;
+  background-color: blueviolet; /* paspalvina elementus be contento*/
+}
+
+li::marker{
+  color: orange; /* paspalvina žymes prie teksto*/
+}
+.selektoriuPvz > :not(div){
+  background-color: rgb(163, 103, 71); 
+}
+
+.selektoriuPvz :nth-child(2n){
+  background-color: green;
+}
+
+li::before{
+  content: ":";
+  color: black;
+  font-size: 30px;
+}
+li::after{
+  content: "*";
+  color: red;
+}

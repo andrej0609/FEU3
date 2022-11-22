@@ -1,0 +1,169 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: auto;
+  height: 700px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: navy;
+}
+
+.div2 {
+  grid-area: 1 / 4 / 2 / 13;
+  background-color: red;
+}
+
+.div3 {
+  grid-area: 6 / 1 / 10 / 7;
+  background-color: darkseagreen;
+}
+
+.div4 {
+  grid-area: 2 / 1 / 6 / 13;
+  background-color: aqua;
+}
+
+.div5 {
+  grid-area: 6 / 10 / 8 / 13;
+  background-color: grey;
+  color: black;
+}
+
+.div6 {
+  grid-area: 8 / 10 / 10 / 13;
+  background-color: green;
+  color: black;
+}
+
+.div3 {
+  grid-area: 6 / 1 / 10 / 7;
+  background-color: darkseagreen;
+
+}
+
+.div7 {
+  grid-area: 10 / 1 / 12 / 13;
+  background-color: lightsalmon;
+  color: black;
+}
+
+
+h3 {
+  position: relative;
+  margin: 0;
+  top: 40%;
+}
+
+.top {
+  position: relative;
+  margin: 0;
+  top: 30%;
+}
+
+#task2 h1 {
+  text-align: center;
+}
+
+.name2,
+.name3 {
+  display: none;
+}
+
+
+
+@media (max-width: 1020px) {
+  body {
+    background-color: rgb(166, 255, 225);
+  }
+
+  /* task 2 */
+  .name1 {
+    display: none;
+  }
+
+  .name2 {
+    display: block;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 13;
+  }
+
+  .div2 {
+    grid-area: 2 / 1 / 6 / 13;
+  }
+
+  .div3 {
+    grid-area: 6 / 1 / 13 / 3;
+  }
+
+  .div4 {
+    grid-area: 6 / 3 / 9 / 13;
+  }
+
+  .div5 {
+    grid-area: 9 / 3 / 11 / 13;
+  }
+
+  .div6 {
+    grid-area: 11 / 3 / 13 / 10;
+  }
+
+  .div7 {
+    grid-area: 11 / 10 / 13 / 13;
+  }
+
+  
+}
+
+@media (max-width: 678px) {
+  body {
+    background-color: rgb(157, 255, 255);
+  }
+
+  #breakpoints {
+    display: block;
+  }
+
+  #breakpoints>div {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* task 2 */
+  .name2 {
+    display: none;
+  }
+
+  .name3 {
+    display: block;
+  }
+
+  #task2>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parent>div {
+    height: 500px;
+    width: 400px;
+  }
+
+  .parent>div:nth-child(3),
+  .parent>div:nth-child(4) {
+    height: 800px;
+  }
+}

@@ -1,0 +1,55 @@
+body{
+  background-color: azure;
+}
+.logo{
+ position:relative;
+ left: 37%;
+}
+.navbar{
+  background-color: green;
+  width: auto;
+  text-align:  center;
+  padding: 10px;
+}
+.navbar a{
+  float:center;
+  padding: 35px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  
+
+}
+.img{
+  text-align: center;
+}
+
+.about{
+  background-color: green;
+  width: auto;
+  height: 60px;
+  font-size: 45px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.contact{
+  background-color: green;
+  width: auto;
+  height: 60px;
+  font-size: 45px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+main{
+  margin: 10px;
+  padding-left: 20px;
+
+}
+p{
+  font-size: 25px;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+/*@import url('Linkas i css Normalise');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#paveldejimas > ul >{
+  color: red;
+  font-size: 10px;
+
+  margin-left: 50px;
+  border: 3px solid black;
+
+  list-style-type: square;
+}
+p{
+  color: orange;
+}
+
+#priorities p{
+  color: blue;
+}
+
+main section p{
+  color: red;
+}
+.redText{
+  color: red;
+}
+#priorities{
+  text-decoration: none;
+  color: saddlebrown;
+}
+.veryImportant{
+  color: red;
+  font-size: larger;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

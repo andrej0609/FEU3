@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/06Paskaita.css">
+  <title>06 Paskaita</title>
+</head>
+<body>
+  <!--
+    Pseudo klases ir elementai (selektoriai)
+    Multimedijos elementai (video, audio, maps, iframe)
+    Lenteles su speudo klasem/elementais
+    Formos su pseudo klasem/elementais
+    Animacijos ir perejimai
+  -->
+  <main>
+    <section id="pseudoSelektoriai">
+        <h1>
+          <a href="https://www.w3schools.com/csSref/css_selectors.php" target="_blank">Pseudo selektoriai</a>
+        </h1>
+        <ul>
+          <li>*</li>
+          <li>element</li>
+          <li>.class</li>
+          <li>#id</li>
+          <li>selector1, selector2</li>
+          <li>selector1 selector2</li>
+          <li>selector1 > selector2</li>
+          <li>element.class#id - elementas turintys nurodyta klase/es ir/arba nurodita id</li>
+          <li>selector1 + selector2 - iš karto po selector1 einantis selector2 (tame pačiame lygije)</li>
+          <li>selector1 ~ selector2 -  už selectorą visi einantys selectorč (tame pačiame lygije)</li>
+          <li>[attribute] - atributas</li>
+          <li>[attribute=value] - atributas turintys nurodyta reikšme</li>
+          <li>[attribute~=value] - atributas, kuria reikšmeje yra nurodytas žodis</li>
+          <li>[attribute*=value] - atributas, kurio reikšmeje yra nurodita žodžio dalis</li>
+          <li>[attribute|=value] - atributas, kurio reikšme yra value arba value-kažkas</li>
+          <li>[attribute^=value] - atributas, kurio reikšme prasideda ...value </li>
+          <li>[attribute$=value] - atributas, kurio reikšme pasibaigia ...value </li>
+          <h1>Nuorodu atributai</h1>
+          <li>:link - paprasta/nelankyta nuoroda</li>
+          <li>:visited - lankyta nuoroda</li>
+          <li>:hover - užejes kursorius </li>
+          <li>:active - aktivi (paspaudimo momento) nuoroda</li>
+          <li>element:empty - tuščias elementas (be content)</li>
+          <li>::marker - sarašo elemento žymes</li>
+          <li>:not(selector) - neparinka nurodyto selectoriaus</li>
+          <li>:first-child - parenka pirmaji vaikini elementa</li>
+          <li>:last-child - parenka paskutini vaikini elementa</li>
+          <li>:only-child - parenka vieninteli vaikini elementa (jeigu jis yra tik vienas)</li>
+          <li>:first-of-type - parenka pirmaji nurodito tipo elementa</li>
+          <li>:last-of-type - parenka paskutini nurodyto tipo elementa</li>
+          <li>only-of-type - parenka vieninteli nurodyto tipo elementa</li>
+          <li>:nth-clild(n) - parenka nurodyta/ius vaikini/us elementus</li>
+          <li>:nth-last-child(n) - nuo galo parenka nurodyta/us vaikini/ius elementus</li>
+          <li>:nth-of-type(n) - parenka nurodita/ius elementa/us pagal tipa</li>
+          <li>:nth-last-of-type(n) - nuo galo parenka nurodita/us elementa/us pagal tipa</li>
+          <li>::marker - elementy žyme</li>
+          <li>::before - sukuria kažkoki turini prieš elementa</li>
+          <li>::after - sukuria kažkoki turini po elemento</li>
+          <li>input:checked - pažymetus/parinktus radio/checkbox/option pasirinkimus</li>
+          <li>input:default - iš anksto parinktas pasirinkimas</li>
+          <li>input:disabled - input'as, kuris turi disabled atributa</li>
+          <li>input:enable - input'as, kuris neturi disabled atributo</li>
+          <li>input:focus - input'as, ant kurio yra paspausta / fokusuotas</li>
+          <li>input:in-range - input'as, kurio verte yra nurodytose ribose</li>
+          <li>input:out-of-range - input'as, kurio verte yra už nurodytu ribu</li>
+          <li>input:indeterminate - input'as, kurio reikšme neapibrežta</li>
+          <li>input:invalis - input'as, kurio verte yra netinkama</li>
+          <li>input:valid - inputas' kurio verte yra tinkama</li>
+          <li>input:required - input'as su required atrubutu</li>
+          <li>input:optional - input'as be required atrubuto</li>
+          <li>input:read-only - input'as su readonly atributu</li>
+          <li>input:read-write - input'as be readonly atributo</li>
+          <li>input::placeholder - Ivesties laukelio placeholder atributo reikšmes parinkimas stilizavimui</li>
+          <li>element::first-letter - parenka elemento pirmaja raide</li>
+          <li>element::first-line - parenka elemento pirmaja eilute</li>
+          <li>::selection - parenka vartotoja pažymeta informacija</li>
+          <li>:is()</li>
+          <li>:has()</li>
+          <li>:where()</li>
+        </ul>
+        <div class="selektoriuPvz">
+          <p class="rytoTekstas" id="hallo">labas rytas</p>
+          <p>tekstas</p>
+          <h1 class="heading irDar">labas vakaras</h1>
+          <div>
+            <p>labas</p>
+          </div>
+          <p>tekstas asaasdas sadas </p>
+          <p>takasat asad asdsa </p>
+          <p> tekstas asas asas </p>
+          <h1>Abc Tekstas</h1>
+          <h1>Labas</h1>
+          </div>
+    </section>
+    <section id="multimedija">
+      <h1>Multimedija</h1>
+      <p>
+        Iframe - skirtas ikelti kitos svetaines dali, arba visa svetaine i savo svetaine.
+      </p>
+       <!--<video controls>
+          <source src="" type="">
+          <source src="" type="">
+          <source src="" type="">
+        </video>
+      <div id="video">
+        <video src="" controls></video> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eUSkZCoGalo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="audio">
+        <audio src="">
+        <source src="" type="">
+        <source src="" type="">
+        <source src="" type="">
+        </audio>
+        <audio src=""controls></audio>
+      </div>
+      <div id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45468.52588406254!2d25.346487612325053!3d54.41674838817488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2slt!4v1668415570950!5m2!1sru!2slt" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div id="page">
+        <iframe src="https://fast.com/" height="400" width="500" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
