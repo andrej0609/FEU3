@@ -22,18 +22,20 @@
 
   .sweet {
     display: flex;
+    justify-content: flex-start;
+   
 
   }
 
   .foto {
-    width: auto;
-    height: 200px;
-    transition: 1s;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
   }
   
 
   .uno {
-    width: 700px;
+    width: 750px;
     height: 250px;
     margin-left: 20px;
   }
