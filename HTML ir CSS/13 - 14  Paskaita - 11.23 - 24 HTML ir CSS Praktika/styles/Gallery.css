@@ -1,0 +1,40 @@
+@media (min-width: 450px) {
+  #galery {
+    background-color: #645cff;
+  }
+
+  .foto {
+    width: 450px;
+  }
+}
+
+
+@media (min-width: 1245px) {
+  #galery {
+    margin-top: 80px;
+  }
+
+  .ourgalery {
+    width: auto;
+    height: 100px;
+    padding-top: 80px;
+  }
+
+  .sweet {
+    display: flex;
+
+  }
+
+  .foto {
+    width: auto;
+    height: 200px;
+    transition: 1s;
+  }
+  
+
+  .uno {
+    width: 700px;
+    height: 250px;
+    margin-left: 20px;
+  }
+}

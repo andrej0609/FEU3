@@ -1,0 +1,18 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://kit.fontawesome.com/a076d05399.js");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Sans+Pro&display=swap');
+
+
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./aboutus.css);
+@import url(./tours.css);
+@import url(./Gallery.css);
+@import url(./footer.css);
+
+body{
+  margin: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  min-width: 450px;
+}
+
