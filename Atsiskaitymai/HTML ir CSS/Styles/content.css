@@ -1,0 +1,305 @@
+@media (min-width: 450px) {
+  #content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: auto;
+    height: 350px;
+    background: linear-gradient(0deg, #FF8139, red), red;
+    background-size: cover;
+
+  }
+
+  h1 {
+    font-size: 50px;
+    
+  }
+
+  h4 {
+    font-size: 25px;
+    
+  }
+  .h1RGB{
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    color: gray;
+  }
+
+  .container1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  #container2 {
+    width: auto;
+    height: 350px;
+  }
+
+  #container2>div>div>h1 {
+    color: #999;
+    font-size: 30px;
+  }
+
+  .our {
+    width: 435px;
+    height: 435px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+
+  }
+
+  .but {
+    width: 120px;
+    height: 60px;
+    padding: 0;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 100px;
+    gap: 10px;
+  }
+
+  .small {
+    width: 40px;
+    height: 45px;
+  }
+
+
+  #container3 {
+    width: auto;
+    height: 500px;
+
+  }
+
+  .hh1 {
+    font-size: 50px;
+    margin-left: 32px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .pp {
+    font-size: 20px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .exsplore {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+
+  .scale {
+    border-radius: 10px;
+    margin: 30px;
+    background-color: lightgray;
+  }
+
+  .orangeText {
+    color: orange;
+    margin: 0;
+    width: 130px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .img2 {
+    width: 290px;
+    height: 278px;
+
+    align-items: center;
+
+    text-align: center;
+    color: white;
+  }
+
+  .cardtext {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280px;
+    height: 100px;
+
+  }
+
+  .nameEth {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .grayTextt {
+    color: gray;
+    font-size: 25px;
+  }
+
+  .grayTextt2 {
+    color: gray;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .grayTextt3 {
+    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .grayTextt4 {
+    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  #slides {
+    background-color: white;
+    width: auto;
+    height: 500px;
+    border-bottom: 3px solid grey;
+  }
+
+  .try {
+    position: absolute;
+    width: 290px;
+    height: 400px;
+    left: 32px;
+    top: 1443px;
+  }
+
+  #container4 {
+    width: 450px;
+    height: 567px;
+    position: absolute;
+    border-bottom: 3px solid grey;
+    margin-top: 80px;
+
+  }
+
+
+
+  .img3 {
+    position: absolute;
+    width: 206px;
+    height: 467px;
+    left: 253.52px;
+    top: 100px;
+  }
+
+  .dollText {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 180px;
+    margin-left: 20px;
+
+  }
+
+  .dollText>h1 {
+    margin-top: 20px;
+  }
+
+  .dollText>h3 {
+    margin: 0;
+    color: #ff459f;
+  }
+
+  .icons2 {
+    display: none;
+  }
+
+  .graylink {
+    color: gray;
+    font-weight: bold;
+  }
+
+  .dollBig {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  .icons2 {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 100px;
+  }
+
+  .our {
+    width: auto;
+    height: 435px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+
+  }
+
+  #content {
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 15px;
+  }
+
+  .hh1 {
+    margin-left: 40px;
+  }
+
+
+
+
+  .img3 {
+    display: none;
+  }
+
+  #container4 {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    border-bottom: 3px solid grey;
+
+  }
+
+  .dollText {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 460px;
+    margin-left: 40px;
+
+  }
+
+  .dollBig {
+    display: flex;
+    position: absolute;
+    width: 206px;
+    height: 467px;
+    right: 301px;
+    top: 34px;
+  }
+
+
+}

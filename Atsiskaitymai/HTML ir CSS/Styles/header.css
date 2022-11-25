@@ -1,0 +1,65 @@
+@media (min-width: 450px) {
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between; 
+  }
+
+  .nftlanding {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav3 {
+    display: none;
+  }
+
+  .img5 {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  .material-icons {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .nav3 {
+    display: flex;
+    text-decoration: none;
+    color: gray;
+  }
+
+  .navbar3 {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .violett {
+    color: violet;
+  }
+
+  .head {
+    margin-left: 25px;
+  }
+
+}
