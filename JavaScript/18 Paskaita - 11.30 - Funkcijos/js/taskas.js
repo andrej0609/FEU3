@@ -36,7 +36,28 @@ function daugyba(nr1, nr2) {
 }
 daugyba(10, 5)
 
+function laipsnioKelymas(nr1, nr2) {
+return nr1 ** nr2;
+}
+
+
+function sakniesTraukymas(nr1, nr2) {
+  return nr1 ** (1/nr2);
+  }
+  console.log("Iš 25 traukiamia 2 laipsnio šakni", sakniesTraukymas(625,2));
+  console.log("Iš 25 traukiamia 4 laipsnio šakni", sakniesTraukymas(625,4))
+  console.log("Iš 25 traukiamia 3 laipsnio šakni", sakniesTraukymas(625,3))
+  
+
+
+
+  function liekanosRadimas(nr1, nr2) {
+   return nr1 % nr2;
+  }
+
+
 // 2
+
 function firstToLast(array) {
   for (let element of array) {
     console.log(element);
@@ -56,7 +77,7 @@ function lastToFirst(array){
 // 4
 console.groupCollapsed('Task4')
 
-let ShowzodziuMasyvas = ['labas', 'koks', 'tavo', 'vardas', 'iš', 'kur', 'esi'];
+let ShowzodziuMasyvas = ['labas', 'koks', 'tavo', 'vardas', 'iš', 'kur', 'ąžuolas', 'suolas', 'Привет'];
 function rikiuojameZodiuMasyva(ShowzodziuMasyvas){
   return ShowzodziuMasyvas.sort((a, b) => a.localeCompare(b));
 }
@@ -64,7 +85,7 @@ console.groupEnd();
 // 5   Sukurti funkciją, kuri surikiuotų gautąją informaciją (parametrą(masyvą(tik su number kintamaisiais))) nuo didžiausio iki mažiausio ir ją išvestų į konsolę.
 console.groupCollapsed('Task5')
 
-let Skaiciai = [15, 20, 1, 10, 550, 80, 99, 55, 41, 81];
+let Skaiciai = [15, 20, 1, 10, 550, 80, 99, 55, 41, 81, -2, -550, -15];
 function GetSkaiiuMasyva(Skaiciai){
   return Skaiciai.sort(function (a, b) { return b - a });
 }
@@ -89,37 +110,56 @@ function getNumber(a, b, c) {
 }
 
 console.groupEnd();
-// 8
+// 8 1 variantas
 console.groupCollapsed('Task8')
-let vardasPavarde = "Petras Petraitis";
+
+let vardasPavarde = "Petras Petrauskas";
 function nameNumber(vardasPavarde) {
   let numberOfLetters = ((vardasPavarde).length);
   return numberOfLetters;
   }
+
 console.groupEnd();
+
+//8.2variantas
+
+function zodziuIlgis(zodis1, zodis2){
+  let pirmoZodzioIlgis = zodis1.length;
+  let antroZodzioIlgis = zodis2.length;
+  let atsakymas = pirmoZodzioIlgis + antroZodzioIlgis; 
+  return atsakymas;
+}
+//return (zodis1 + zodis2).length; 
 // 9
+
 console.groupCollapsed('Task9')
 
-let array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-function showArray(array){
-  return (array[15]);
+function showArray(kelintaraide) {
+const abc = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+return (abc[kelintaraide-1]);
+
 }
 
 
 console.groupEnd();
 
 // 10   Sukurkite funkciją, kuri paims tris parametrus (n1, n2, operator). Operator gali būti "sum", "sub", "div", "multi" (matematinės reikšmės - sudėti, atimti, padalinti, padauginti). n1 ir n2 bus skaičiai. Turite grąžinti atsakymą, kur n1 ir n2 atlikta matematinė operacija (pvz.: 5, 1, "sub" => 4; 6, 3, "sum" => 9...). Hint: Reikės funkcijoje naudoti if-else arba switch.
-
+console.groupCollapsed('Task10')
 
 let n1 = 5;
 let n2 = 4;
-function sum(n1, n2) {
-  if (typeof (n1) === "number" && typeof (n2) === "number") {
+
+function Suskacioti(n1, n2) {
+  if (n1 + n2){
     let atsakymas = n1 + n2;
     return atsakymas;
   }
 }
-// 11
+
+
+console.groupEnd();
+// 11 1budas
+
 console.groupCollapsed('Task11')
 
 let randomNumber = Math.floor(Math.random() * 11);
@@ -128,16 +168,37 @@ function pow2(randomNumber){return randomNumber**2};
 console.log(pow2(randomNumber));
 console.groupEnd();
 
-//Extra0
+//11 2 budas
+
+function randomNumber_1_to_10(){
+  return Math.ceil(Math.random() * 10);
+}
+function squareNumber(){
+return randomNumber_1_to_10()**2;
+}
+console.log(squareNumber());
+
+//Extra0 1variantas
+console.groupCollapsed('extra0')
 
 let pirminisMasyvas=[1, 2, 3, 4, 5, 6, 7]
 let antrinisMasyvas=['a', 'b', 'c']
 do{
-pirminisMasyvas.splice(antrinisMasyvas.length, 0, antrinisMasyvas.pop())
+pirminisMasyvas.splice(antrinisMasyvas.length, 0, antrinisMasyvas.shift())
 console.log(pirminisMasyvas);
 } while (antrinisMasyvas.length > 0);
 
+//2 variantas
+function fancyMasyvas(pirminisMasyvas, antrinisMasyvas) { 
+  while (antrinisMasyvas.length){
+    pirminisMasyvas.splice(antrinisMasyvas.length, 0, antrinisMasyvas.shift())
+  }
+  return pirminisMasyvas;
+}
+console.log(fancyMasyvas(pirminisMasyvas,antrinisMasyvas));
 
+
+console.groupEnd();
 //Extra 1
 
 console.groupCollapsed('extra1')

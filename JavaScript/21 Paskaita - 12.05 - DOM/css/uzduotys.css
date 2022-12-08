@@ -1,0 +1,68 @@
+.title {
+  font-size: 30px;
+  color: brown;
+  text-align: center;
+}
+
+.title:hover {
+  color: red;
+}
+
+.par1 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.monaLisa {
+  width: 400px;
+  margin-left: 33%;
+}
+
+.image {
+  width: 250px;
+  height: 350px;
+  margin-left: 20px;
+  transition: 1s;
+}
+
+.images {
+  width: 350px;
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s;
+}
+
+.imageChange {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.images:hover {
+  transform: scale(1.2);
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+#task2>div:nth-child(3)>img {
+  width: 450px;
+
+}
+
+.namesOfWorks {
+  text-align: center;
+  color: green;
+}
+
+#task3>div:nth-child(7)>img {
+  width: 550px;
+}
+
+#task3>div:nth-child(16)>img {
+  width: 550px;
+}

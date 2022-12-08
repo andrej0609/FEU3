@@ -1,0 +1,39 @@
+#bandymas1{
+  background-color: brown;
+
+}
+#bandymas2{
+  background-color: red;
+  
+}
+#bandymas3{
+  background-color: greenyellow;
+  
+}
+
+#bandymas4{
+  background-color: indianred;
+  
+}
+
+#bandymas2_btn1{
+  width: 100px;
+  height: 30px;
+  background-color: burlywood;
+ 
+
+}
+
+.nonDisplay{
+  display: none;
+ 
+}
+.sleptiRodyti{
+  background-color: burlywood;
+  width: 100px;
+  height: 30px;
+}
+.sleptiRodyti:hover{
+ width: 120px;
+ height: 40px;
+}
