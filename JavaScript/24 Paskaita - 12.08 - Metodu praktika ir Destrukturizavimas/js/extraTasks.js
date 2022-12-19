@@ -169,9 +169,9 @@ console.groupEnd();
 
 console.groupCollapsed("4) Naudodami destructuring priskirkite 1 kintamajam visas reikšmes išskyrus pirmas 3.");
 
-let [p, ...q] = [1, 2, 3, 4, 5];
+let [, , ,  ...q] = [1, 2, 3, 4, 5,"labas"];
 
-console.log(p, q);
+console.log( q);
 
 console.groupEnd();
 
@@ -179,8 +179,6 @@ console.groupEnd();
 
 console.groupCollapsed("5) Naudodami destructuring priskirkite 3 kintamiesiems 3 reikšmes paimtas iš objekto.");
 
-let { r, s, t } = { r: 1, s: 2, t: 3 };
-console.log(r, s, t);
 
 let object = {
     vardas1: 'Adas',
@@ -204,3 +202,27 @@ let v = 2;
 [u, v] = [v, u];
 
 console.log(u, v);
+
+console.groupEnd();
+
+// 2 kintamuju reikšmiu sukeitimas
+
+console.groupCollapsed("2 kintamuju reikšmiu sukeitimas");
+
+let a3 = 5;
+let b3 = 10;
+
+a3 = a3 + b3 ;
+b3 = a3 - b3 ;
+a3 = a3 - b3 ;
+
+console.log(a3, b3);
+
+console.groupEnd();
+
+
+
+
+
+
+
