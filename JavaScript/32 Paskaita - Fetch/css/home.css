@@ -3,7 +3,6 @@
   height: 300px;
   border: 1px solid black;
   margin: 10px;
-  display: inline-block;
   text-align: center;
 }
 
@@ -14,23 +13,22 @@
 }
 
 .mealInfo {
-  width: 100%;
+  width: 500px;
   height: 100%;
   border: 1px solid black;
   margin: 10px;
-  display: inline-block;
   text-align: center;
 }
 
 .mealInfo img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
 }
 
 .mealInfo iframe {
   width: 100%;
-  height: 500px;
+  height: 300px;
 }
 
 form {
@@ -68,4 +66,8 @@ button:hover {
 label {
   margin: 10px;
   font-size: 20px;
+}
+
+li{
+  list-style-type: circle;
 }

@@ -3,20 +3,17 @@ const meals = document.querySelector('#meals');
 const form = document.querySelector('form');
 const ingredient = document.querySelector('#ingredient');
 
-// Pridedame "submit" event listener form elementui
+// Pridedame event listener formai, kuris bus sukviestas spustelėjus ant formos
 form.addEventListener('submit', (e) => {
-  // Nutraukiame formos submit'inimą
   e.preventDefault();
-  // Sukuriam URL, kuriame naudojame nurodytą ingredientą kaip filtrą
-  const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.value}`;
   // Siunčiame fetch užklausą su sukurtu URL
-  fetch(url)
+  fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient.value}`)
     .then((response) => response.json()) // Gauname atsakymą ir konvertuojame jį į JSON formatą
     .then((data) => {
       console.log(data);
       // Išvalome meals elemento HTML
       meals.innerHTML = '';
-      // Ciklu perduodame per visus gautus patiekalus
+      // Ciklu perduodame per visus patiekalus
       data.meals.forEach((meal) => {
         // Sukuriame naują HTML elementą
         const mealDiv = document.createElement('div');
@@ -31,20 +28,18 @@ form.addEventListener('submit', (e) => {
         meals.append(mealDiv);
         // Pridedame event listener naujam elementui, kuris bus sukviestas spustelėjus ant patiekalo
         mealDiv.addEventListener('click', () => {
-          // Sukuriame naują URL su patiekalo ID kaip filtru
-          const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`;
           // Siunčiame fetch užklausą su sukurtu URL
-          fetch(url)
+          fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
             .then((response) => response.json()) // Gauname atsakymą ir konvertuojame jį į JSON formatą
             .then((data) => {
               console.log(data);
-              // Gauname patiekalo informaciją iš gauto duomenų
+              // Gauname patiekalo informaciją iš gautu duomenų
               const meal = data.meals[0];
               // Sukuriame masyvą su patiekalo ingredientais
               const ingredients = [];
-              // Ciklu per visus iki 20 patiekalo ingredientus
+              // Ciklu perduodame per visus ingredientus
               for (let i = 1; i <= 20; i++) {
-                // Jeigu yra nurodytas ingredientas, jį pridedame prie masyvo
+                // Tikriname ar ingredientas yra
                 if (meal[`strIngredient${i}`]) {
                   ingredients.push(
                     `${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`
@@ -69,8 +64,8 @@ form.addEventListener('submit', (e) => {
               <p>${meal.strInstructions}</p>
               <h4>Video Recipe</h4>
               <iframe src="https://www.youtube.com/embed/${meal.strYoutube.slice(
-                -11
-              )}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    -11
+                  )}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               `;
               // Išvalome meals elemento HTML
               meals.innerHTML = '';
