@@ -1,0 +1,77 @@
+#jsonMovies {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 30%;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.movie img {
+  width: 200px;
+  height: 300px;
+}
+
+p {
+  margin: 0;
+  font-size: large;
+}
+
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#randomUser {
+  display: flex;
+  justify-content: space-between;
+}
+#randomUser div {
+  width: 30%;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.user img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #135e16;
+}
+
+
+#randomUserBtn:hover {
+  cursor: pointer;
+  background-color: #135e16;
+  color: #ff0000;
+}
+
