@@ -1,7 +1,49 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 200px;
+  height: 20px;
+}
+
+label {
+  display: block;
+  color: red;
+  font-weight: bold;
+}
+
+#books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+
+}
+
+#books .card {
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+
+#books .card img {
+  width: 300px;
+  height: 400px
+}
+
+.card-body {
+  text-align: center;
+}
+
+
 .btn-danger {
   background-color: #dc3545;
   border-color: #dc3545;
-} 
+}
 
 .btn-warning {
   background-color: #ffc107;
@@ -39,42 +81,7 @@
 .btnAddBook:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
+
 #addBookForm {
   margin: 20px;
-}
-
-.form {
-  margin-bottom: 10px;
-}
-
-.form-control {
-  width: 200px;
-  height: 20px;
-}
-label{
-  display: block;
-  color: red;
-  font-weight: bold;
-}
-
-#books {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 10px;
-
-}
-
-#books .card {
-  margin-bottom: 20px;
-  border: 2px solid black;
-}
-
-
-#books .card img {
-  width: 300px;
-  height: 400px
-}
-.card-body {
-text-align: center;
 }
