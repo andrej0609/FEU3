@@ -1,0 +1,138 @@
+{
+  "books": [
+    {
+      "title": "The Hobbitas",
+      "author": "labas",
+      "year": "labas",
+      "image": "https://m.media-amazon.com/images/I/51uYlDqoIyL._AC_SY780_.jpg",
+      "id": 1
+    },
+    {
+      "title": "The Lord of the Rings",
+      "topic": "undefined",
+      "duration": "undefined",
+      "image": "https://m.media-amazon.com/images/I/51kfFS5-fnL._AC_SY780_.jpg",
+      "id": 2
+    },
+    {
+      "title": "The Silmarillion",
+      "author": "J.R.R. Tolkien",
+      "year": "1977",
+      "image": "https://m.media-amazon.com/images/I/619URYD15CL.jpg",
+      "id": 3,
+      "description": "The Silmarillion is a book of J. R. R. Tolkien's legendarium, a history of Middle-earth. It was published in 1977, six years after Tolkien's death, by his son Christopher, with assistance from his wife, Edith; the book was edited by Christopher Tolkien and published by George Allen & Unwin. The Silmarillion is a collection of myths and legends about the First Age of Middle-earth, and the events and characters that occurred before The Hobbit and The Lord of the Rings. It is the first published volume of the History of Middle-earth series, and the first to be published in Tolkien's lifetime.",
+      "pages": 328,
+      "publisher": "Allen & Unwin (UK), Houghton Mifflin (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "title": "The children of Hurin",
+      "author": "J.R.R. Tolkien",
+      "year": "2007",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/The_Children_of_Hurin_cover.jpg/220px-The_Children_of_Hurin_cover.jpg",
+      "id": 4,
+      "description": "The Children of Húrin is a 2007 fantasy novel by J. R. R. Tolkien, based on an earlier, unfinished story by the author. It was published by Houghton Mifflin Harcourt in the United States and HarperCollins in the United Kingdom. The book is the second in the History of Middle-earth series, following The Silmarillion, and the first to be published since Tolkien's death in 1973. The book was edited by Christopher Tolkien, who also edited The Silmarillion, and features illustrations by Alan Lee.",
+      "pages": 352,
+      "publisher": "Allen & Unwin (UK), Houghton Mifflin (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "id": 5,
+      "image": "https://m.media-amazon.com/images/I/5165He67NEL.jpg",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "year": 1997,
+      "description": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry. Harry makes close friends and a few enemies during his first year at the school, and with the help of his friends, Harry faces an attempted comeback by the dark wizard Lord Voldemort, who killed Harry's parents, but failed to kill Harry when he was just 15 months old.",
+      "pages": 223,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "id": 6,
+      "image": "https://m.media-amazon.com/images/I/51yzj3H34aL._SX324_BO1,204,203,200_.jpg",
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "year": 1998,
+      "description": "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series. The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the \"Chamber of Secrets\" has been opened and that the \"heir of Slytherin\" would kill all pupils who do not come from all-magical families. These threats are found after attacks which leave residents of the school petrified. Throughout the year, Harry and his friends Ron and Hermione investigate the attacks.",
+      "pages": 251,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "id": 7,
+      "image": "https://m.media-amazon.com/images/I/51StPSSsneL.jpg",
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "year": 1999,
+      "description": "Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. Rowling and the third in the Harry Potter series. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban who they believe is one of Lord Voldemort's old allies.",
+      "pages": 317,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J.K. Rowling",
+      "year": "2000",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b6/Harry_Potter_and_the_Goblet_of_Fire_cover.png",
+      "id": 8,
+      "description": "Harry Potter and the Goblet of Fire is a fantasy novel written by British author J. K. Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry, and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete.",
+      "pages": 636,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "year": "2003",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Harry_Potter_and_the_Order_of_the_Phoenix.jpg/220px-Harry_Potter_and_the_Order_of_the_Phoenix.jpg",
+      "id": 9,
+      "description": "Harry Potter and the Order of the Phoenix is a fantasy novel written by British author J. K. Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic. Along the way, Harry learns about the return of Lord Voldemort, the truth about Sirius Black, and the history of the Order of the Phoenix.",
+      "pages": 766,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": "J.K. Rowling",
+      "year": "2005",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b5/Harry_Potter_and_the_Half-Blood_Prince_cover.png",
+      "id": 10,
+      "description": "Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J. K. Rowling and the sixth and penultimate novel in the Harry Potter series. It follows Harry Potter's struggles through his sixth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, the brand new Defence Against the Dark Arts teacher and Horace Slughorn, and the Triwizard Tournament that is to take place at Hogwarts.",
+      "pages": 607,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "year": "2007",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a9/Harry_Potter_and_the_Deathly_Hallows.jpg",
+      "id": 11,
+      "description": "Harry Potter and the Deathly Hallows is a fantasy novel written by British author J. K. Rowling and the seventh and final novel of the Harry Potter series. The book was released on 21 July 2007, ending the series that began in 1997 with the publication of Harry Potter and the Philosopher's Stone. It was published in the United Kingdom by Bloomsbury Publishing, in the United States by Scholastic, and in Canada by Raincoast Books. The novel chronicles the events directly following Harry Potter and the Half-Blood Prince (2005), and the final confrontation between the wizards Harry Potter and Lord Voldemort.",
+      "pages": 607,
+      "publisher": "Bloomsbury (UK), Scholastic (US)",
+      "language": "English (UK)",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    },
+    {
+      "title": "A Tale of Two Cities",
+      "author": "Charles Dickens",
+      "year": "1859",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Tales_serial.jpg",
+      "id": 12,
+      "description": "A Tale of Two Cities is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution. The novel tells the story of the French Doctor Manette, his 18-year-long imprisonment in the Bastille in Paris, and his release to live in London with his daughter Lucie whom he had never met. The story is set against the conditions that led up to the French Revolution and the Reign of Terror. In the Introduction to the Encyclopedia of Adventure Fiction, critic Don D'Ammassa argues that it is an adventure novel because the protagonists are in constant danger of being imprisoned or killed.",
+      "pages": 544,
+      "publisher": "Chapman & Hall",
+      "language": "English",
+      "price": "£ 10.00 (UK), $ 12.00 (US)"
+    }
+  ]
+}

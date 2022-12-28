@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/mai.js" defer></script>
+  </head>
+  <body>
+    <form id="addCourseForm">
+      <h1>Add something</h1>
+      <div class="form">
+        <label for="title">Title</label>
+        <imput type="text" name="title" id="title" class="form-control"
+          required> 
+        </div>
+        <div class="form">
+          <label for="topic">Topic</label>
+          <input type="text" name="topic" id="topic" class="form-control"
+            required>
+        </div>
+        <div class="form">
+          <label for="duration">Duration</label>
+          <input type="text" name="duration" id="duration" class="form-control"
+            required>
+        </div>
+        <div class="form">
+          <label for="image">Image</label>
+          <input type="text" name="image" id="image" class="form-control"
+            required>
+        </div>
+        <button type="submit" class="btnAddCourse">Add course</button>
+      </form>
+      <div id="books"></div>
+    </body>
+    <style>
+    body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://img.freepik.com/free-photo/futuristic-smart-city-with-5g-global-network-technology_53876-98438.jpg?w=1380&t=st=1671784587~exp=1671785187~hmac=eef453df1145a3dd455494a7f57c171efbc462a95a6fe267b04fe87c7202b567h);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#addCourseForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+#addCourseForm h1 {
+  color: #000;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form label {
+  color: #000;
+  font-size: 20px;
+}
+
+.form input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.btnAddCourse {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btnAddCourse:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#books .book {
+  width: 500px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#books .book img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#books .book h1 {
+  color: #000;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card h1 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.card p {
+  color: #000;
+  font-size: 15px;
+
+}
+
+.card button {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#title {
+  background-color: #fff;
+}
+
+
+  </style>
+  </html>

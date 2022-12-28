@@ -1,0 +1,67 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "image": "https://www.cyberark.com/wp-content/uploads/2019/11/Developer.jpg",
+      "title": "Frontend Serverless",
+      "topic": "IT",
+      "duration": "6 months"
+    },
+    {
+      "title": "WEB",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://www.bootcamprating.com/wp-content/uploads/2020/10/Understanding-the-world_blog_image_2-1024x682.jpg",
+      "id": 4
+    },
+    {
+      "title": "JavaScript",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://www.igexsolutions.com/wp-content/uploads/2021/02/Website-Development.svg",
+      "id": 6
+    },
+    {
+      "title": "Mobile Apps",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://img.freepik.com/premium-psd/app-interface-mock-up-phone-screen-composition_23-2148963446.jpg?w=826",
+      "id": 8
+    },
+    {
+      "title": "Social Media",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://img.freepik.com/free-vector/flat-guy-blogger-broadcasting-online-stream-with-flying-live-like_88138-945.jpg?w=826&t=st=1671778382~exp=1671778982~hmac=95dd5c0c34b25a94c536a0e858c8bfb218b88799950606b7997d9d9da0545c4a",
+      "id": 9
+    },
+    {
+      "title": "Web dizainas UX/UI",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://img.freepik.com/free-psd/hiking-concept-web-template_23-2148467097.jpg?w=826&t=st=1671778515~exp=1671779115~hmac=40034fc8bffa3e2bc9e97734e67d3cf9f58600fa9ff86bc3d3dcd87dd3c0daab",
+      "id": 10
+    },
+    {
+      "title": "Social Media Marketing",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://img.freepik.com/premium-psd/billboard-mockup-blue-sky-background_23-2147956892.jpg?w=826",
+      "id": 11
+    },
+    {
+      "title": "Web dizainas UX",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://img.freepik.com/free-vector/gradient-ui-ux-background_52683-69316.jpg?w=826&t=st=1671777971~exp=1671778571~hmac=735e00e88f84894f4ca477def175e1709ef0c1e3870f695d2906a8f5fbcc4ea2",
+      "id": 12
+    },
+    {
+      "title": "JavaScript",
+      "topic": "IT",
+      "duration": "6 months",
+      "image": "https://www.igexsolutions.com/wp-content/uploads/2021/02/Website-Development.svg",
+      "id": 13
+    }
+  ]
+}
