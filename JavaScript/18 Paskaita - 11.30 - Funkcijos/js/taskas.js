@@ -37,8 +37,9 @@ function daugyba(nr1, nr2) {
 daugyba(10, 5)
 
 function laipsnioKelymas(nr1, nr2) {
-return nr1 ** nr2;
+  return nr1 ** nr2;
 }
+console.log("15 laipsnis 5", laipsnioKelymas(15, 5));
 
 
 function sakniesTraukymas(nr1, nr2) {

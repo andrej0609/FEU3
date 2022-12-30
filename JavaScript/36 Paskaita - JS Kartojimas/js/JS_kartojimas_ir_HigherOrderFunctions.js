@@ -37,9 +37,9 @@ console.groupEnd()
 
 //1.3) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto skaičių masyvo grąžintų tik tuos skaičius, kurie yra didesni nei A, bet mažesni nei B ir yra lyginiai arba nelyginiai (true/false).
 console.groupCollapsed('Užduotis 1.3')
-let arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,15,20, 23, 54, 67, 89, 100];
 let A3 = 3;
-let B3 = 8;
+let B3 = 67;
 let even = true;
 
 function DidesniArmazesni(arr, A3, B3, even) {
@@ -116,11 +116,10 @@ console.groupEnd()
 
 //2.2) Parašykite funkciją (nenaudojant nei lambda, nei metodų), kuri iš jai paduoto string masyvo grąžintų tik tuos žodžius, kurie yra ilgesni negu A, trumpesni negu B.
 console.groupCollapsed('Užduotis 2.2')
-let arr8 = ['Labas', 'rytas', 'Lietuva', 'sveikas', 'pasaulyje'];
-let A8 = 5;
-let B8 = 10;
+let A8 = 3;
+let B8 = 7;
 
-function biggerThanAandSmallerThanB(arr, A, B) {
+function ilggesniNeguAtrumpesniNeguB(arr, A, B) {
   let result = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].length > A && arr[i].length < B) {
@@ -130,7 +129,7 @@ function biggerThanAandSmallerThanB(arr, A, B) {
   return result;
 }
 
-console.log(biggerThanAandSmallerThanB(arr8, A8, B8));
+console.log(ilggesniNeguAtrumpesniNeguB(arr7, A8, B8));
 
 console.groupEnd()
 
@@ -179,17 +178,18 @@ function biggerThanAandSmallerThanB(arr, A, B) {
 
 console.log(biggerThanAandSmallerThanB(arr7, A11, B11));
 console.groupEnd()
-
+//Naudodami ką norite (lambda, metodus, kitų funkcijų kvietimus jūsų funkcijose ir pns.) perrašykite 2.2  užduoti.
 console.groupCollapsed('Užduotis 2.4.3')
-let A12 = 5;
-let B12 = 8;
+let A12 = 3;
+let B12 = 7;
 let firstLetter2 = true;
 
-function biggerThanAandSmallerThanB(arr, A, B, firstLetter2) {
-  return arr.filter(x => x.length > A && x.length < B && x[0] === x[0].toUpperCase() && firstLetter2 === true || x.length > A && x.length < B && x[0] === x[0].toLowerCase() && firstLetter2 === false);
+function biggerThanAandSmallerThanB(arr, A, B, firstLetter) {
+  return arr.filter(x => x.length > A && x.length < B && x[0] === x[0].toUpperCase() && firstLetter === true || x.length > A && x.length < B && x[0] === x[0].toLowerCase() && firstLetter === false);
 }
 
 console.log(biggerThanAandSmallerThanB(arr7, A12, B12, firstLetter2));
+
 console.groupEnd()
 console.groupEnd()
 

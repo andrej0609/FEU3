@@ -1,7 +1,8 @@
-//1) Parašykite funkciją, kuri iš jai duotojo masyvo suformuotų ir grąžintų string'ą.
+//1) Parašykite funkciją, kuri iš jai duotojo masyvo suformuotų ir grąžintų string.
 console.groupCollapsed('1 uzduotis');
-let masyvas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+
+let masyvas = ['Labas', 'Vakaras', 25, 14, , 13, false, true]
 function uzd1(masyvas) {
   let text = '';
   for (let i = 0; i < masyvas.length; i++) {
@@ -11,6 +12,7 @@ function uzd1(masyvas) {
 }
 
 console.log(uzd1(masyvas));
+
 console.groupEnd();
 
 //2) Parašykite funkciją, kuriai padavus kažkokį number kintamąjį (ilgą 10+ skaitmenų), jinai jį išvestų į konsolę su "-" simboliu tarp dviejų lyginių skaičių. (pvz: paduodi 0645234, grąžina 0-6-45234)
@@ -166,10 +168,10 @@ console.groupCollapsed('10 uzduotis');
 let masyvas11 = [12, 54, 1, 65, 78, 91, 45];
 
 function uzd10(masyvas11, n) {
-  return masyvas11[n - 1];
+  return masyvas11[n];
 }
 
-console.log(uzd10(masyvas11, 4));
+console.log(uzd10(masyvas11, 3));
 
 console.groupEnd();
 

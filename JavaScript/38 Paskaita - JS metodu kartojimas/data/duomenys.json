@@ -1,0 +1,74 @@
+{
+  "Butai": [
+    {
+      "butoNumeris": "1",
+      "bendrasPlotas": "100",
+      "kambariuSkaicius": "3",
+      "pardavimoKaina": "85000",
+      "telefonoNumeris": "123456789"
+    },
+    {
+      "butoNumeris": "18",
+      "bendrasPlotas": "200",
+      "kambariuSkaicius": "4",
+      "pardavimoKaina": "200000",
+      "telefonoNumeris": "864577885"
+    },
+    {
+      "butoNumeris": "59",
+      "bendrasPlotas": "150",
+      "kambariuSkaicius": "3",
+      "pardavimoKaina": "150000",
+      "telefonoNumeris": "869875214"
+    },
+    {
+      "butoNumeris": "197",
+      "bendrasPlotas": "45",
+      "kambariuSkaicius": "2",
+      "pardavimoKaina": "50000",
+      "telefonoNumeris": "864755448"
+    },
+    {
+      "butoNumeris": "210",
+      "bendrasPlotas": "38",
+      "kambariuSkaicius": "1",
+      "pardavimoKaina": "30000",
+      "telefonoNumeris": "861244563"
+    },
+    {
+      "butoNumeris": "285",
+      "bendrasPlotas": "60",
+      "kambariuSkaicius": "2",
+      "pardavimoKaina": "60000",
+      "telefonoNumeris": "864785895"
+    },
+    {
+      "butoNumeris": "312",
+      "bendrasPlotas": "80",
+      "kambariuSkaicius": "3",
+      "pardavimoKaina": "80000",
+      "telefonoNumeris": "863566589"
+    },
+    {
+      "butoNumeris": "358",
+      "bendrasPlotas": "90",
+      "kambariuSkaicius": "3",
+      "pardavimoKaina": "90000",
+      "telefonoNumeris": "862598635"
+    },
+    {
+      "butoNumeris": "421",
+      "bendrasPlotas": "45",
+      "kambariuSkaicius": "2",
+      "pardavimoKaina": "45000",
+      "telefonoNumeris": "864515812"
+    },
+    {
+      "butoNumeris": "456",
+      "bendrasPlotas": "100",
+      "kambariuSkaicius": "4",
+      "pardavimoKaina": "100000",
+      "telefonoNumeris": "869845785"
+    }
+  ]
+}
