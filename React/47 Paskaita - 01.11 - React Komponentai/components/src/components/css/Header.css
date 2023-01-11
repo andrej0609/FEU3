@@ -37,6 +37,20 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #1cccf8;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 35px;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
 #root > div.header > p:nth-child(4) {
  margin: 0px;
 }
