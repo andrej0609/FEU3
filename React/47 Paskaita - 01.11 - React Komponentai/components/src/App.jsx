@@ -4,7 +4,6 @@ import ListItem from './components/Listitem';
 import Portfolio from './components/portfolio';
 import images from './components/List';
 
-
 function App() {
   return (
     <>
@@ -13,7 +12,7 @@ function App() {
       <div className="Img1">
         <div className='woman2'>
           {images.map(image => (
-             <ListItem imageUrl={image.url} text={image.text} />
+            <ListItem imageUrl={image.url} text={image.text} />
           ))}
         </div>
       </div>
