@@ -1,7 +1,7 @@
 const ListItem = (props) => {
   return (
     <li>
-      {props.data.image}
+      <img src={props.imageUrl} alt='A description of the image' />
     </li>
   );
 }

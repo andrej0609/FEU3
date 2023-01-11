@@ -23,7 +23,6 @@ function App() {
           <p>Ipsum Feugiat</p>
         </div>
       </div>
-      <div className="Img2">
       <div className="Img1">
         <div className='woman'>
           <img src="https://cdn.costumewall.com/wp-content/uploads/2017/03/lois-griffin.jpg" alt="" />
@@ -37,7 +36,6 @@ function App() {
           <img src="https://cdn.costumewall.com/wp-content/uploads/2017/03/lois-griffin.jpg" alt="" />
           <p>Rhoncus Semper</p>
         </div>
-      </div>
       </div>
     </>
   );
