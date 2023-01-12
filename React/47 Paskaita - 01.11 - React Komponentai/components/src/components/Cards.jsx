@@ -1,4 +1,4 @@
-import Card from './Card.jsx';
+import Card from './Foto.jsx';
 
 const Cards = (props) => {
   return (

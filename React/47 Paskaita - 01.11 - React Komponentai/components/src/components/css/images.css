@@ -3,8 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .woman2 {
@@ -32,6 +30,10 @@
 .card p {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 10px;
   background-color: #fff;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
