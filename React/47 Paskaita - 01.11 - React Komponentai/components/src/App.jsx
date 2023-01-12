@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Portfolio />
       <div className="Img1">
-        <div className='woman2'>
+        <div className='portfolioImg'>
           <Cards
             data={
               [
@@ -31,7 +31,7 @@ function App() {
         </div>
       </div>
       <div className="Img1">
-        <div className='woman2'>
+        <div className='portfolioImg'>
           <Cards
             data={
               [
