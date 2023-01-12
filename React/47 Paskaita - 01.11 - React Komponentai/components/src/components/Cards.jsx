@@ -3,7 +3,6 @@ import Card from './Foto.jsx';
 const Cards = (props) => {
   return (
     <>
-      
         {
           props.data.map((item, index) => {
             return (
@@ -14,7 +13,6 @@ const Cards = (props) => {
             )
           })
         }
-    
     </>
   );
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Portfolio from './components/portfolio';
+import Portfolio from './components/Portfolio';
 import Cards from './components/Cards';
 
 function App() {
