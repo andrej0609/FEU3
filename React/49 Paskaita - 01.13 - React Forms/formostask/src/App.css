@@ -1,0 +1,8 @@
+
+@import url(./komponentai/css/NavBar.css);
+@import url(./komponentai/css/cards.css);
+@import url(./komponentai/css/addNewArticle.css);
+
+body{
+    background-color: #f5f5f5;
+}

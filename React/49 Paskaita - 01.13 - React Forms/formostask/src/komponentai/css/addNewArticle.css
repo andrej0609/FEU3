@@ -1,0 +1,67 @@
+/*
+<form className='addNew' onSubmit={handleSubmit}>
+      <label>
+        Image:
+        <input type="text" value={image} onChange={e => setImage(e.target.value)} />
+      </label>
+      <label>
+        Title:
+        <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
+      </label>
+      <label>
+        Paragraph 1:
+        <input type="text" value={paragraph1} onChange={e => setParagraph1(e.target.value)} />
+      </label>
+      <label>
+        Paragraph 2:
+        <input type="text" value={paragraph2} onChange={e => setParagraph2(e.target.value)} />
+      </label>
+      <label>
+        Paragraph 3:
+        <input type="text" value={paragraph3} onChange={e => setParagraph3(e.target.value)} />
+      </label>
+      <button type="submit">Add Article</button>
+    </form>
+*/
+
+.addNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.addNew label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.addNew input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.addNew button {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+

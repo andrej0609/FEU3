@@ -1,0 +1,58 @@
+
+.Box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#article {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#article img {
+  width: 100%;
+  height: 200px;
+}
+
+#article h2 {
+  margin: 10px 0;
+}
+
+#article p {
+  margin: 5px 0;
+}
+
+#article button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#article button:hover {
+  background-color: greenyellow;
+}
+
+#article.marked-article {
+  border: 1px solid #f00;
+}
+
+#article.marked-article button {
+  background-color: #f00;
+  color: #fff;
+}
+
+#article.marked-article button:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
