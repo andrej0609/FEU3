@@ -1,0 +1,52 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.article img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.article h2 {
+  text-align: center;
+}
+
+.article p {
+  text-align: center;
+}
+
+.article button {
+ width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.marked {
+  background-color: rgb(131, 129, 129);
+  border: 1px solid red;
+}
+
+.marked button {
+  background-color: red;
+}
+
+.marked p {
+  text-decoration: line-through;
+}
+
+.marked img {
+  opacity: 0.5;
+}
+.marked h2 {
+  text-decoration: line-through;
+}
