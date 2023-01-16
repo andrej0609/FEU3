@@ -3,7 +3,8 @@ import Article from "./Article";
 import React, { useState } from "react";
 import AddArticleForm from "./AddArticleForm";
 
-function Page() {
+
+function Content() {
   const [markedCount, setMarkedCount] = useState(0);
 
   const [articles, setArticles] = useState([
@@ -12,38 +13,38 @@ function Page() {
       image: "https://picsum.photos/200/300",
       title: "Article 1",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-      paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
-      paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
+      paragraph2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      paragraph3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }, {
-      id: 7,
+      id: 2,
       image: "https://i.picsum.photos/id/582/200/300.jpg?hmac=dU7Y_b9LUlVjAWIZ7AJRvue6QpYvaEkOFbUj75FrFAc",
       title: "Article 2",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-      paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
-      paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
+      paragraph2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      paragraph3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }, {
-      id: 7,
+      id: 3,
       image: "https://i.picsum.photos/id/418/200/200.jpg?hmac=FPLIYEnmfmXtqHPsuZvUzJeXJJbbxMWNq6Evh7mMSN4",
       title: "Article 3",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
-      paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
+      paragraph3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }, {
-      id: 7,
+      id: 4,
       image: "https://i.picsum.photos/id/257/200/300.jpg?hmac=j0NVivHS9qSXBGkBOUjchG0Ckt6pje1KSfHsnwtr_8M",
       title: "Article 4",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
       paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
     }, {
-      id: 7,
+      id: 5,
       image: "https://i.picsum.photos/id/864/200/300.webp?hmac=ojgvzBeCggKLWqHxuCNEQn0SkUOXFyIvkQJ7wclzNcE",
       title: "Article 5",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
       paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
     }, {
-      id: 7,
+      id: 6,
       image: "https://picsum.photos/seed/picsum/536/354",
       title: "Article 6",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
@@ -72,20 +73,27 @@ function Page() {
     }
   }
 
+  const disconnect = () => {
+    localStorage.removeItem("userData");
+  };
+
   return (
-    <div className="allPage">
-      <NavBar markedCount={markedCount} />
+    <div className="Page">
+      <NavBar markedCount={markedCount}
+        disconnect={disconnect}
+      />
       <AddArticleForm handleAddArticle={handleAddArticle} />
       <div className="Box">
         {articles.map(article => (
           <Article
             key={article.id}
+            article={article}
             image={article.image}
             title={article.title}
             paragraph1={article.paragraph1}
             paragraph2={article.paragraph2}
             paragraph3={article.paragraph3}
-            updateMarkedCount = {updateMarkedCount}
+            updateMarkedCount={updateMarkedCount}
           />
         ))}
       </div>
@@ -93,5 +101,4 @@ function Page() {
   );
 }
 
-export default Page;
-
+export default Content;

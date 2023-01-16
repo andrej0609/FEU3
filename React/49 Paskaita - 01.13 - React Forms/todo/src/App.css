@@ -1,0 +1,106 @@
+.addtask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addtask h2 {
+  margin-bottom: 20px;
+}
+
+.addtask form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.addtask form input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.addtask form button {
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.addtask form button:hover {
+  background-color: rgb(1, 43, 1);
+  color: #fff;
+}
+
+.addtask ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.addtask ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.addtask ul li button {
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.addtask ul li button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.addtask ul li.completed {
+  background-color: #000;
+  color: #fff;
+}
+
+.addtask ul li.incomplete {
+  background-color: #fff;
+  color: #000;
+}
+
+.addtask ul li button.delete {
+  background-color: #f00;
+  color: #fff;
+}
+
+.addtask ul li button.delete:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.addtask ul li button.complete {
+  background-color: #0f0;
+  color: #fff;
+}
+
+.addtask ul li button.complete:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
