@@ -10,7 +10,7 @@ function AddArticleForm({ handleAddArticle }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleAddArticle({
-      id: Date.now(),
+      id: Math.floor(Math.random() * 100),
       image,
       title,
       paragraph1,
