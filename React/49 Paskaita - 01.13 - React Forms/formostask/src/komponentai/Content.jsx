@@ -83,7 +83,7 @@ function Content() {
         disconnect={disconnect}
       />
       <AddArticleForm handleAddArticle={handleAddArticle} />
-      <div className="Box">
+      <div className="Cards">
         {articles.map(article => (
           <Article
             key={article.id}
