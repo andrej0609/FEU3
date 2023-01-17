@@ -1,9 +1,5 @@
-/*
-Footer'yje - nuorodos, terms and uses, copyrights...
-*/
-
 const Footer = () => {
-  return (  
+  return (
     <>
       <footer>
         <div className="footer">
@@ -25,6 +21,6 @@ const Footer = () => {
     </>
   );
 }
- 
+
 export default Footer;
 

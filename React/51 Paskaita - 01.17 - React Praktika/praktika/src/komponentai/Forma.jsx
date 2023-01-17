@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 
 function Forma() {
@@ -98,4 +96,3 @@ function Forma() {
 }
 
 export default Forma;
-

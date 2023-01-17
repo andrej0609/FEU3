@@ -1,8 +1,9 @@
+import React, { useState } from "react";
 import Bg from './images/Bg.jpg';
 import Moon from './images/Moon.png';
 import Mountain from './images/Mountain.png';
 import Road from './images/Road.png';
-import React, { useState } from "react";
+
 
 const Header = () => {
   const [vardas, setVardas] = useState("");
