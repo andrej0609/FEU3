@@ -1,0 +1,100 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content button {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.content button:hover {
+  background-color: #333;
+}
+
+.content button:active {
+  background-color: #bdbdbd;
+}
+
+.ModalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  border: 1px solid #000;
+}
+
+.ModalForm label {
+  font-size: 20px;
+}
+
+.ModalForm input {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ModalForm input:hover {
+  background-color: #333;
+}
+
+.ModalForm input:active {
+  background-color: #bdbdbd;
+}
+
+.ModalForm button {
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.ModalForm button:hover {
+  background-color: #333;
+}
+
+.ModalForm button:active {
+  background-color: #bdbdbd;
+}

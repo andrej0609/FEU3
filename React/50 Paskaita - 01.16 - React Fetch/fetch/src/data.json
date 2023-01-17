@@ -1,0 +1,25 @@
+{
+  "kalnai": [
+    {
+      "pavadinimas": "Kalno name",
+      "lokacija": "Kur randasi",
+      "aukstis": "5200M",
+      "arEsuIvykes": true,
+      "id": 1
+    },
+    {
+      "pavadinimas": "Kalno name",
+      "lokacija": "Kur randasi",
+      "aukstis": 3898,
+      "arEsuIvykes": false,
+      "id": 2
+    },
+    {
+      "pavadinimas": "Kalno name",
+      "lokacija": "Kur randasi",
+      "aukstis": 4561,
+      "arEsuIvykes": true,
+      "id": 3
+    }
+  ]
+}

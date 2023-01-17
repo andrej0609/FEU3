@@ -56,6 +56,7 @@
   background-color: #fff;
   border: 1px solid #000;
   cursor: pointer;
+  height: 21px;
 }
 
 .LoginInfo button:hover {
@@ -79,4 +80,39 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 200px;
+  }
+  .navbar img {
+    width: 50px;
+  }
+  .user-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-info img {
+    width: 30px;
+  }
+  .name {
+    font-size: 1rem;
+  }
+  .marked-articles {
+    width: 15px;
+    height: 15px;
+    font-size: 0.6rem;
+  }
+  .LoginInfo {
+    flex-direction: column;
+  }
+  .LoginInfo form {
+    flex-direction: column;
+  }
+
+  .LoginInfo button {
+    margin: 10px;
+  }
 }

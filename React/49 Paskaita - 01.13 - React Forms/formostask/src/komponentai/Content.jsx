@@ -12,36 +12,36 @@ function Content() {
       id: 1,
       image: "https://picsum.photos/200/300",
       title: "Article 1",
-      paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      paragraph1: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae.",
       paragraph2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
       paragraph3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }, {
       id: 2,
-      image: "https://i.picsum.photos/id/582/200/300.jpg?hmac=dU7Y_b9LUlVjAWIZ7AJRvue6QpYvaEkOFbUj75FrFAc",
+      image: "https://picsum.photos/200/301",
       title: "Article 2",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-      paragraph2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      paragraph2: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae.",
       paragraph3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }, {
       id: 3,
-      image: "https://i.picsum.photos/id/418/200/200.jpg?hmac=FPLIYEnmfmXtqHPsuZvUzJeXJJbbxMWNq6Evh7mMSN4",
+      image: "https://picsum.photos/200/302",
       title: "Article 3",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
-      paragraph3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
+      paragraph3: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae."
     }, {
       id: 4,
-      image: "https://i.picsum.photos/id/257/200/300.jpg?hmac=j0NVivHS9qSXBGkBOUjchG0Ckt6pje1KSfHsnwtr_8M",
+      image: "https://picsum.photos/200/304",
       title: "Article 4",
-      paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      paragraph1: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae.",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
       paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
     }, {
       id: 5,
-      image: "https://i.picsum.photos/id/864/200/300.webp?hmac=ojgvzBeCggKLWqHxuCNEQn0SkUOXFyIvkQJ7wclzNcE",
+      image: "https://picsum.photos/200/305",
       title: "Article 5",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-      paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
+      paragraph2: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae.",
       paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
     }, {
       id: 6,
@@ -49,12 +49,12 @@ function Content() {
       title: "Article 6",
       paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
-      paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
+      paragraph3: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae."
     }, {
       id: 7,
       image: "https://picsum.photos/id/1084/536/354?grayscale",
       title: "Article 7",
-      paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      paragraph1: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo sed vero totam minima esse ut, possimus consequuntur maxime molestiae.",
       paragraph2: "Sed auctor, magna non bibendum bibendum, velit risus...",
       paragraph3: "In hac habitasse platea dictumst. Sed vitae aliquam quam..."
     }

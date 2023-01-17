@@ -1,0 +1,37 @@
+{
+  "kalnai": [
+    {
+      "pavadinimas": "Everest",
+      "lokacija": "Nepalas",
+      "aukstis": 8848,
+      "arEsuIvykes": false,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/800px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+      "id": 1
+    },
+    {
+      "pavadinimas": "Elbrusas",
+      "lokacija": "Rusija",
+      "aukstis": 5641,
+      "arEsuIvykes": true,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Mount_Elbrus_May_2008.jpg",
+      "id": 2
+    },
+    {
+      "pavadinimas": "Kilimandžaro",
+      "lokacija": "Tanzanija",
+      "aukstis": 5895,
+      "arEsuIvykes": true,
+      "img": "https://cdn.futura-sciences.com/sources/images/mont-Kilimanjaro.jpg",
+      "id": 3
+    },
+    {
+      "pavadinimas": "K2",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/K2-big.jpg/420px-K2-big.jpg",
+      "lokacija": "Pakistanas-Kinija",
+      "aukstis": "8614",
+      "arEsuIveikes": true,
+      "id": 4,
+      "arEsuIvykes": true
+    }
+  ]
+}

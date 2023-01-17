@@ -1,2 +1,4 @@
 npx create-react-app 'aplanko vardas'
 npm start
+
+json-server data.json --watch --port 5000

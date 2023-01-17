@@ -1,0 +1,217 @@
+@import url('htttps://fonts.googleapis.com/css?family=Popins:300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Popins', sans-serif;
+}
+
+body {
+  background: #0a2a43;
+  min-height: 1500px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+
+section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 10em;
+}
+
+/*
+ <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+*/
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+/*
+ <div className="LoginInfo">
+          <form>
+            <label>
+              Vardas:
+              <input type="text" />
+            </label>
+            <br />
+            <label>
+              Slaptažodis:
+              <input type="password" />
+            </label>
+            <br />
+            <button type="button">Prisijungti</button>
+          </form>
+        </div>
+*/
+
+.LoginInfo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.LoginInfo form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginInfo form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginInfo form label input {
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.LoginInfo form button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #f00;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 50px;
+}
+
+.LoginInfo form button:hover {
+  background: #fff;
+  color: #f00;
+}
+
+#root>header>div>form>label:nth-child(3) {
+  color: #fff;
+}
+
+#root>header>div>form>label:nth-child(1) {
+  color: #fff;
+}
+
+#root>header>div>form>label:nth-child(1) {
+  margin-left: 32px;
+}
+
+#root>header>div>button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #f00;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#root>header>div>button:hover {
+  background: #fff;
+  color: #f00;
+}
