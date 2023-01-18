@@ -86,7 +86,6 @@ function Forma() {
           id="arEsuIveikes"
           checked={mountainData.arEsuIveikes}
           onChange={handleCheckboxChange}
-          required
         />
         <br />
         <button type="submit">Submit</button>
