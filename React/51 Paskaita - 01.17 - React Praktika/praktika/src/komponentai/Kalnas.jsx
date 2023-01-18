@@ -117,5 +117,3 @@ function Kalnas({ kalnas }) {
 }
 
 export default Kalnas;
-
-

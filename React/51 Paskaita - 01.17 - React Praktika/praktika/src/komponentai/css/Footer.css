@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 footer {
   position: relative;
   width: 100%;
@@ -7,6 +9,7 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 100000;
+  padding-top: 30px;
 }
 
 .footer-links {
@@ -25,6 +28,7 @@ footer {
 .footer-links ul li {
   list-style: none;
   margin: 0 20px;
+  margin-bottom: 7px;
 }
 
 .footer-links ul li a {
@@ -54,4 +58,123 @@ footer {
   letter-spacing: 1px;
 }
 
+/*
+<div className="SocialIcons">
+          <ul>
+            <li class="soc-icon"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="soc-icon"><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+            <li class="soc-icon"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+          </div>
+*/
 
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SocialIcons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SocialIcons ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.SocialIcons ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#root>footer>div>div.SocialIcons>ul>li:nth-child(1)>a>i {
+  color: #3b5998;
+}
+
+#root>footer>div>div.SocialIcons>ul>li:nth-child(2)>a>i {
+  color: #1da1f2;
+}
+
+#root>footer>div>div.SocialIcons>ul>li:nth-child(3)>a>i {
+  color: #0077b5;
+}
+
+#root>footer>div>div.SocialIcons>ul>li:nth-child(1)>a>i:hover {
+  color: #174ec4;
+}
+
+#root>footer>div>div.SocialIcons>ul>li:nth-child(2)>a>i:hover {
+  color: #63afee;
+}
+
+#root>footer>div>div.SocialIcons>ul>li:nth-child(3)>a>i:hover {
+  color: #005c9e;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links ul li {
+    list-style: none;
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .footer-links ul li a:hover {
+    color: #f00;
+  }
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-copyright p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+
+}

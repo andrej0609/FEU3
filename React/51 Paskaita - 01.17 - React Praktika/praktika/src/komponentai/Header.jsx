@@ -1,70 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
+import NavBar from "./NavBar";
+import LoginForm from "./LoginForm";
+import { useState } from "react";
 import Bg from './images/Bg.jpg';
 import Moon from './images/Moon.png';
 import Mountain from './images/Mountain.png';
 import Road from './images/Road.png';
 
-
 const Header = () => {
-  const [vardas, setVardas] = useState("");
-  const [slaptazodis, setSlaptazodis] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-
-  function prisijungti() {
-    setVardas("");
-    setSlaptazodis("");
-    setIsLoggedIn(true);
-  }
-
-  function atsijungti() {
-    setIsLoggedIn(false);
-  }
+  const [showRegistration, setShowRegistration] = useState(false);
 
   return (
     <>
       <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div className="LoginInfo">
-          {isLoggedIn ? <button type="button" onClick={atsijungti}>Atsijungti</button> :
-            <form>
-              <label>
-                Vardas:
-                <input type="text" value={vardas} onChange={(e) => setVardas(e.target.value)} />
-              </label>
-              <br />
-              <label>
-                Slaptažodis:
-                <input type="password" value={slaptazodis} onChange={(e) => setSlaptazodis(e.target.value)} />
-              </label>
-              <br />
-              <button type="button" onClick={prisijungti}>Prisijungti</button>
-            </form>
-          }
-        </div>
+        <NavBar />
+        <LoginForm
+          isLoggedIn={isLoggedIn}
+          setIsLoggedIn={setIsLoggedIn}
+          showRegistration={showRegistration}
+          setShowRegistration={setShowRegistration}
+        />
       </header>
       <section>
-        <img src={Bg} alt="bg" />
-        <img src={Moon} alt="moon" />
-        <img src={Mountain} alt="mountain" />
-        <img src={Road} alt="road" />
+        <img src={Bg} alt="bg" id="bg" />
+        <img src={Moon} alt="moon" id="moon" />
+        <img src={Mountain} alt="mountain" id="mountain" />
+        <img src={Road} alt="road" id="road" />
         <h1 id='text'>Your Travel Guide</h1>
       </section>
     </>
   );
-}
+};
 
 export default Header;
-

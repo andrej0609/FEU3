@@ -60,6 +60,10 @@ section img {
   font-size: 10em;
 }
 
+#road {
+  z-index: 2;
+}
+
 /*
  <nav>
           <ul>
@@ -185,14 +189,30 @@ nav ul li a:hover {
 
 #root>header>div>form>label:nth-child(3) {
   color: #fff;
+  margin-left: 5px;
 }
 
 #root>header>div>form>label:nth-child(1) {
   color: #fff;
+  margin-right: 30px;
+}
+
+#root>header>div>form>label:nth-child(5) {
+  color: #fff;
+  margin-right: 30px;
+}
+
+#root>header>div>form>label:nth-child(7) {
+  color: #fff;
+  margin-right: 20px;
 }
 
 #root>header>div>form>label:nth-child(1) {
   margin-left: 32px;
+}
+
+#root>header>div>form>label:nth-child(3) {
+  margin-right: 35px;
 }
 
 #root>header>div>button {
