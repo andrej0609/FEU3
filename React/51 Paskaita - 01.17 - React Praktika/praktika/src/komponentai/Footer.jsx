@@ -14,9 +14,9 @@ const Footer = () => {
           </div>
           <div className="SocialIcons">
           <ul>
-            <li class="soc-icon"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li class="soc-icon"><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
-            <li class="soc-icon"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li className="soc-icon"><a href="https://www.facebook.com/"><i className="fa-brands fa-facebook"></i></a></li>
+            <li className="soc-icon"><a href="https://twitter.com/"><i className="fa-brands fa-twitter"></i></a></li>
+            <li className="soc-icon"><a href="https://www.linkedin.com/"><i className="fa-brands fa-linkedin"></i></a></li>
           </ul>
           </div>
           <br />

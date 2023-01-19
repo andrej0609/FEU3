@@ -9,7 +9,7 @@ function Kalnas({ kalnas }) {
     event.preventDefault();
     setIsModalOpen(true);
   }
-
+  //DELETE request
   const handleDelete = (event) => {
     event.preventDefault();
     const response = fetch(`http://localhost:5000/kalnai/${kalnas.id}`, {
@@ -23,6 +23,7 @@ function Kalnas({ kalnas }) {
     setIsModalOpen(false);
   }
 
+  //PUT request
   const handleModalSave = (event) => {
     event.preventDefault();
     const response = fetch(`http://localhost:5000/kalnai/${kalnas.id}`, {

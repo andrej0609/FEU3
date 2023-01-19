@@ -31,6 +31,58 @@
       "aukstis": "8614",
       "id": 4,
       "arEsuIvykes": false
+    },
+    {
+      "pavadinimas": "KANGCHENJUNGA",
+      "img": "https://www.muchbetteradventures.com/magazine/content/images/2019/06/13120354/iStock-5431830181.jpg",
+      "lokacija": "NEPAL/INDIA",
+      "aukstis": "8586",
+      "id": 5,
+      "arEsuIvykes": false
+    }
+  ],
+  "vartotojai": [
+    {
+      "vardas": "Jonas",
+      "el_pastas": "Jonas@gmail.com",
+      "slaptazodis": "123",
+      "id": 1
+    },
+    {
+      "name": "Petras",
+      "email": "Petras@gmail.com",
+      "password": "Labas",
+      "id": 2
+    },
+    {
+      "name": "Andrejus",
+      "email": "Andrejus@gmail.com",
+      "password": "Ka=koks",
+      "id": 3
+    },
+    {
+      "name": "Ponas",
+      "email": "KazkoksPonas@gmail.com",
+      "password": "Ponaspetras",
+      "id": 4
+    },
+    {
+      "name": "Justas",
+      "email": "JustasJustas@gmail.com",
+      "password": "Justas",
+      "id": 5
+    },
+    {
+      "name": "Ieva",
+      "email": "Ieva@gmail.com",
+      "password": "ieva123",
+      "id": 6
+    },
+    {
+      "name": "asas",
+      "email": "asddas@gmail.com",
+      "password": "sqwqwe",
+      "id": 7
     }
   ]
 }

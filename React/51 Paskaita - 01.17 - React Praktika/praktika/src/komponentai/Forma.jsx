@@ -23,7 +23,7 @@ function Forma() {
     });
   }
 
-
+  //POST request
   const handleSubmit = (event) => {
     event.preventDefault();
     const response = fetch('http://localhost:5000/kalnai', {

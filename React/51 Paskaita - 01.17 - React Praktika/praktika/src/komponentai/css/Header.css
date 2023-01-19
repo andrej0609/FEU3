@@ -227,11 +227,29 @@ nav ul li a:hover {
   font-weight: 600;
   cursor: pointer;
   transition: 0.5s;
-  margin-left: 50px;
-  margin-top: 30px;
+  margin-right: 20px;
+  margin-top: 70px;
+  position: relative;
+  top: 20px;
 }
 
 #root>header>div>button:hover {
   background: #fff;
   color: #f00;
+}
+
+#root > header > div > p  {
+  color: #fff;
+  position: relative;
+  top: 0px;
+  left: 100px;
+  bottom: 10px;
+  
+}
+
+#root > header > div > img {
+  position: relative;
+  bottom: 10px;
+  left: 100px;
+  width: 60px;
 }
