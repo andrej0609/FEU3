@@ -33,11 +33,19 @@
       "arEsuIvykes": false
     },
     {
-      "pavadinimas": "KANGCHENJUNGA",
+      "pavadinimas": "Kangchenjunga",
       "img": "https://www.muchbetteradventures.com/magazine/content/images/2019/06/13120354/iStock-5431830181.jpg",
-      "lokacija": "NEPAL/INDIA",
+      "lokacija": "Nepal/India",
       "aukstis": "8586",
       "id": 5,
+      "arEsuIvykes": false
+    },
+    {
+      "pavadinimas": "Dhaulagiri",
+      "img": "https://www.muchbetteradventures.com/magazine/content/images/2019/06/13120354/iStock-9084835641.jpg",
+      "lokacija": "Nepal",
+      "aukstis": "8167",
+      "id": 6,
       "arEsuIvykes": false
     }
   ],
