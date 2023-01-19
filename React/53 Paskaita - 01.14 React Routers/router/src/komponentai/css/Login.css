@@ -1,0 +1,55 @@
+/*
+<div className="Login">
+        <h1>User Login</h1>
+        <form>
+          <label>
+            Email:
+            <input type="text" name="email" />
+          </label>
+          <label>
+            Password:
+            <input type="password" name="password" />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+*/
+
+
+.Login h1 {
+  text-align: center;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Login form label {
+  margin: 10px 0;
+}
+
+.Login form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Login form button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.Login form button:hover {
+  background-color: #ccc;
+}

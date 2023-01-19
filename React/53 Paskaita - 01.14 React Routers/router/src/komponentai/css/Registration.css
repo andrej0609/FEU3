@@ -1,0 +1,37 @@
+.register form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register form label {
+  margin: 10px 0;
+}
+
+.register form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register form button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.register form button:hover {
+  background-color: #ccc;
+}
+
+.register h1 {
+  text-align: center;
+}
