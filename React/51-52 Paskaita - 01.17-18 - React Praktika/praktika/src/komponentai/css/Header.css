@@ -238,18 +238,25 @@ nav ul li a:hover {
   color: #f00;
 }
 
-#root > header > div > p  {
+#root>header>div>p {
   color: #fff;
   position: relative;
   top: 0px;
   left: 100px;
   bottom: 10px;
-  
+
 }
 
-#root > header > div > img {
+#root>header>div>img {
   position: relative;
   bottom: 10px;
   left: 100px;
   width: 60px;
+}
+
+#root > header > div > p{
+  position: relative;
+  font-size: 12px;
+  margin-top: 5px;
+
 }

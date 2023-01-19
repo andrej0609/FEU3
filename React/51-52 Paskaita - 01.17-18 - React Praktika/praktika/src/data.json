@@ -91,6 +91,18 @@
       "email": "asddas@gmail.com",
       "password": "sqwqwe",
       "id": 7
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "qwe123",
+      "id": 8
+    },
+    {
+      "name": "Kazkas",
+      "email": "kazkasČgmail.com",
+      "password": "labas",
+      "id": 9
     }
   ]
 }

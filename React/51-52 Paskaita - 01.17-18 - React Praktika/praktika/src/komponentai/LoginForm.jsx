@@ -7,7 +7,7 @@ const LoginForm = ({ isLoggedIn, setIsLoggedIn, showRegistration, setShowRegistr
     slaptazodis: ""
   });
   const [username, setUsername] = useState("");
-  const [setShowMessage] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
   function handleChange(event) {
     setFormData({
@@ -18,16 +18,25 @@ const LoginForm = ({ isLoggedIn, setIsLoggedIn, showRegistration, setShowRegistr
 
   function prisijungti() {
     if (formData.vardas !== "" && formData.slaptazodis !== "") {
-      setUsername(formData.vardas);
-      setFormData({ vardas: "", el_pastas: "", slaptazodis: "" });
-      setIsLoggedIn(true);
-      setShowMessage(true);
-    } else {
-      alert("Vardas ir Slaptažodis turėtų būti užpildyti!")
+      fetch("http://localhost:5000/vartotojai")
+        .then(res => res.json())
+        .then(response => {
+          const user = response.find(
+            user => user.name === formData.vardas && user.password === formData.slaptazodis
+          );
+          if (user) {
+            setIsLoggedIn(true);
+            setUsername(formData.vardas);
+            setShowRegistration(false);
+            setShowMessage(false);
+          } else {
+            setShowMessage(true);
+          }
+        })
+        .catch(error => console.error("Error:", error));
     }
   }
 
-  
   function atsijungti() {
     setIsLoggedIn(false);
     setShowRegistration(false);
@@ -54,7 +63,7 @@ const LoginForm = ({ isLoggedIn, setIsLoggedIn, showRegistration, setShowRegistr
         })
         .catch(error => console.error("Error:", error));
     } else {
-      alert("Visi laukai turi būti užpildyti!")
+      alert("Visi laukai turi būti užpildyti!");
     }
   }
 
@@ -114,51 +123,51 @@ const LoginForm = ({ isLoggedIn, setIsLoggedIn, showRegistration, setShowRegistr
             />
           </label>
           <br />
-          <button type="button" onClick={register} required>
+          <button type="button" onClick={register}>
             Registruotis
-          </button>
-          <button
-            type="button"
-            onClick={() => setShowRegistration(false)}
-          >Atšaukti
           </button>
         </form>
       ) : (
-        <form>
-          <label>
-            Vardas:
-            <input
-              type="text"
-              name="vardas"
-              value={formData.vardas}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <br />
-          <label>
-            Slaptažodis:
-            <input
-              type="password"
-              name="slaptazodis"
-              value={formData.slaptazodis}
-              onChange={handleChange}
-              required
-            />
-          </label>
-          <br />
-          <button type="button" onClick={prisijungti}>
-            Prisijungti
-          </button>
-          <button
-            type="button"
-            onClick={() => setShowRegistration(true)}
-          >Registruotis
-          </button>
-        </form>
+        <>
+          {showMessage && <p className="error-message">Neteisingas vardas arba slaptažodis!</p>}
+          <form>
+            <label>
+              Vardas:
+              <input
+                type="text"
+                name="vardas"
+                placeholder="Vardas"
+                value={formData.vardas}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <br />
+            <label>
+              Slaptažodis:
+              <input
+                type="password"
+                name="slaptazodis"
+                placeholder="Slaptažodis"
+                value={formData.slaptazodis}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <br />
+            <button type="button" onClick={prisijungti}>
+              Prisijungti
+            </button>
+            <button type="button" onClick={() => setShowRegistration(true)}>
+              Registruotis
+            </button>
+          </form>
+        </>
       )}
     </div>
   );
 };
 
 export default LoginForm;
+
+
