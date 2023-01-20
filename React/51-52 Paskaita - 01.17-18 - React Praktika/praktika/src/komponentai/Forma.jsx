@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { nanoid } from 'nanoid';
 
 function Forma() {
   const [mountainData, setMountainData] = useState({
@@ -6,7 +7,8 @@ function Forma() {
     img: '',
     lokacija: '',
     aukstis: '',
-    arEsuIveikes: false
+    arEsuIveikes: false,
+    id: nanoid()
   });
 
   const handleChange = (event) => {

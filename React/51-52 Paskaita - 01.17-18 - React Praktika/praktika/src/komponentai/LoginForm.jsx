@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { nanoid } from "nanoid";
 
 const LoginForm = ({ isLoggedIn, setIsLoggedIn, showRegistration, setShowRegistration }) => {
   const [formData, setFormData] = useState({
+    id: nanoid(),
     vardas: "",
     el_pastas: "",
     slaptazodis: ""
@@ -46,6 +48,7 @@ const LoginForm = ({ isLoggedIn, setIsLoggedIn, showRegistration, setShowRegistr
   function register() {
     if (formData.vardas !== "" && formData.el_pastas !== "" && formData.slaptazodis !== "") {
       const data = {
+        id: nanoid(),
         name: formData.vardas,
         email: formData.el_pastas,
         password: formData.slaptazodis
