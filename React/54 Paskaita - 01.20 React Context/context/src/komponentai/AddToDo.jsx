@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import ToDosContext from '../toDosContext';
 
-const AddToDo = ({ addNewTask }) => {
+const AddToDo = () => {
+  const { addNewTask } = useContext(ToDosContext);
 
   const [newtaskName, setNewTaskName] = useState('');
 
