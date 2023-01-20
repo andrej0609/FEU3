@@ -26,12 +26,13 @@ const ToDosProvider = ({ children }) => {
 
   return (
     <>
-      <ToDosContext.Provider value={{
-        toDos,
-        addNewTask,
-        changeTaskState,
-        deleteTask
-      }}>
+      <ToDosContext.Provider
+        value={{
+          toDos,
+          addNewTask,
+          changeTaskState,
+          deleteTask
+        }}>
         {children}
       </ToDosContext.Provider>
     </>
