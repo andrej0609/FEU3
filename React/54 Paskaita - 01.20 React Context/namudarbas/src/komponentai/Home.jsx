@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import OrderContext from '../OrderContext';
 
+
 const Home = () => {
   const { orders, setOrders, deleteOrder } = useContext(OrderContext);
   const [loading, setLoading] = useState(true);
@@ -15,7 +16,8 @@ const Home = () => {
   }, [setOrders, orders]);
 
   if (loading) {
-    return <div><img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="loading" /></div>;
+    return <div>
+      <img src="https://im5.ezgif.com/tmp/ezgif-5-e29b060793.gif" alt="loading" /></div>;
   }
 
   return (
