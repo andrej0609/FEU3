@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import OrderContext from '../OrderContext';
+import Monkey from './img/monkey.gif';
 
 
 const Home = () => {
@@ -17,7 +18,8 @@ const Home = () => {
 
   if (loading) {
     return <div>
-      <img src="https://im5.ezgif.com/tmp/ezgif-5-e29b060793.gif" alt="loading" /></div>;
+      <img src={Monkey} alt="loading" />
+    </div>
   }
 
   return (
