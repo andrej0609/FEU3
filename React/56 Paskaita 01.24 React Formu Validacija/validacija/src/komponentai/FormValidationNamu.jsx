@@ -2,16 +2,20 @@ import * as Yup from 'yup';
 import { Formik, Form, Field } from 'formik';
 import { useState } from 'react';
 
-
-const FormValidationFormik = () => {
+const FormValidationNamu = () => {
 
   const [values] = useState({
+    username: '',
     email: '',
     password: '',
-    passwordRepeat: ''
+    passwordRepeat: '',
+    age: ''
   });
 
   const validationSchema = Yup.object().shape({
+    username: Yup.string()
+      .min(3, 'Vardas per trumpas')
+      .required('Privalomas laukas'),
     email: Yup.string()
       .email('Neteisingas el. paštas')
       .required('Privalomas laukas'),
@@ -20,13 +24,15 @@ const FormValidationFormik = () => {
       .required('Privalomas laukas'),
     passwordRepeat: Yup.string()
       .oneOf([Yup.ref('password'), null], 'Slaptažodžiai nesutampa')
+      .required('Privalomas laukas'),
+    age: Yup.number()
+      .min(18, 'Jūs per jaunas')
       .required('Privalomas laukas')
   });
 
-
   return (
     <>
-      <h1>Formik</h1>
+      <h1>Registracijos Forma</h1>
       <Formik
         initialValues={values}
         validationSchema={validationSchema}
@@ -36,6 +42,17 @@ const FormValidationFormik = () => {
       >
         {({ errors, touched, values, setValues }) => (
           <Form>
+            <div>
+              <label>Vardas</label>
+              <Field
+                name="username"
+                type="text"
+                value={values.username}
+                onChange={(e) => setValues({ ...values, username: e.target.value })} />
+              {errors.username && touched.username ? (
+                <span>{errors.username}</span>
+              ) : null}
+            </div>
             <div>
               <label>El. paštas</label>
               <Field
@@ -69,13 +86,23 @@ const FormValidationFormik = () => {
                 <span>{errors.passwordRepeat}</span>
               ) : null}
             </div>
-            <input type="submit" value="Submit" />
+            <div>
+              <label>Amžius</label>
+              <Field
+                name="age"
+                type="number"
+                value={values.age}
+                onChange={(e) => setValues({ ...values, age: e.target.value })} />
+              {errors.age && touched.age ? (
+                <span>{errors.age}</span>
+              ) : null}
+            </div>
+            <input type="submit" value="Registruotis" />
           </Form>
         )}
       </Formik>
-
     </>
   );
 }
 
-export default FormValidationFormik;
+export default FormValidationNamu;

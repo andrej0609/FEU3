@@ -1,11 +1,10 @@
 import './App.css';
-import FormValidationCustom from './komponentai/formValidationCustom';
-import FormValidationFormik from './komponentai/FormValidationFormik';
+import FormValidationNamu from './komponentai/FormValidationNamu';
+
 function App() {
   return (
     <>
-      <FormValidationCustom />
-      <FormValidationFormik />
+      <FormValidationNamu />
     </>
   );
 }
