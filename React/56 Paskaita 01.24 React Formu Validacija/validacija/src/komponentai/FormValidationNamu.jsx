@@ -9,7 +9,7 @@ const FormValidationNamu = () => {
     email: '',
     password: '',
     passwordRepeat: '',
-    age: ''
+    age: 0
   });
 
   const validationSchema = Yup.object().shape({
@@ -26,7 +26,7 @@ const FormValidationNamu = () => {
       .oneOf([Yup.ref('password'), null], 'Slaptažodžiai nesutampa')
       .required('Privalomas laukas'),
     age: Yup.number()
-      .min(18, 'Jūs per jaunas')
+      .min(18, 'Jūs negalite būti registruotas, jus per jaunas')
       .required('Privalomas laukas')
   });
 
