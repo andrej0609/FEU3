@@ -1,0 +1,119 @@
+/*
+<body>
+    <div id="root"><div><form><label>UserName:<input type="text" name="userName" value=""></label><label>Password:<input type="password" name="password" value=""></label><input type="submit" value="Log In"></form></div><hr><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=2" alt="user avatar" style="width: 30px; height: auto;"><span>user</span><hr><h1>Pavadinimas0</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=3" alt="user avatar" style="width: 30px; height: auto;"><span>user2</span><hr><h1>Pavadinimas1</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=3" alt="user avatar" style="width: 30px; height: auto;"><span>user2</span><hr><h1>Pavadinimas2</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=2" alt="user avatar" style="width: 30px; height: auto;"><span>user</span><hr><h1>Pavadinimas3</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div></div>
+  
+
+</body>
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #eee;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+form label input {
+  width: auto;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+form label input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background: #555;
+}
+
+form input[type="submit"]:focus {
+  outline: none;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background: #333;
+  border: none;
+}
+
+div img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+}
+
+div span {
+  font-weight: bold;
+}
+
+div h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+div p {
+  width: 100%;
+  text-align: justify;
+}
+
+#root > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#root > a:nth-child(9)
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
