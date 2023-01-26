@@ -1,13 +1,11 @@
 import UserContext from "../../contexts/UserContext";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
 
 const LogIn = () => {
 
-  const [formInputs, setFormInputs] = useState({
-    userName: '',
-    password: ''
-  });
   const [failedLogIn, setFailedLogIn] = useState(false);
   const [userIsBanned, setUserIsBanned] = useState(false);
 
@@ -15,47 +13,65 @@ const LogIn = () => {
 
   const { users, setLoggedInUser } = useContext(UserContext);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (values, { setSubmitting }) => {
+    setSubmitting(true);
+    const loggedInUser = users.find(user => user.userName === values.userName && user.password === values.password);
 
-    const loggedInUser = users.find(user => user.userName === formInputs.userName && user.password === formInputs.password);
-
-    if (!loggedInUser.isBanned) {
-      setLoggedInUser(loggedInUser);
-      navigation('/');
+    if (!loggedInUser) {
+      setFailedLogIn(true);
     } else if (loggedInUser.isBanned) {
       setUserIsBanned(true);
     } else {
-      setFailedLogIn(true);
+      setLoggedInUser(loggedInUser);
+      navigation('/');
     }
+
+    setSubmitting(false);
+
   }
+
+  const validationSchema = Yup.object().shape({
+    userName: Yup.string()
+      .required('Username is required'),
+    password: Yup.string()
+      .required('Password is required')
+  });
 
   return (
     <>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <label>
-            UserName:
-            <input type="text" name="userName"
-              value={formInputs.userName}
-              onChange={(e) => setFormInputs({ ...formInputs, userName: e.target.value })}
-            />
-          </label>
-          <label>
-            Password:
-            <input type="password" name="password"
-              value={formInputs.password}
-              onChange={(e) => setFormInputs({ ...formInputs, password: e.target.value })}
-            />
-          </label>
-          <input type="submit" value="Log In" />
-          {
-            failedLogIn && <span>Wrong log in info</span>
-          }
-          {
-            userIsBanned && <span>Your user has been banned</span>
-          }
-        </form>
+      <div className="Login">
+        <Formik
+          initialValues={{
+            userName: '',
+            password: '',
+          }}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+        >
+          {({ isSubmitting }) => (
+            <Form>
+              <Field
+                type="text"
+                name="userName"
+                placeholder="Username"
+              />
+              <Field
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+              <button type="submit" disabled={isSubmitting}>
+                Log In
+              </button>
+              {
+                failedLogIn && <span>Wrong log in info</span>
+              }
+              {
+                userIsBanned && <span>Your user has been banned</span>
+              }
+            </Form>
+          )}
+        </Formik>
       </div>
     </>
   );

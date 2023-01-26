@@ -1,0 +1,64 @@
+.UserInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#root > div.UserInfo > div:nth-child(1) > a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.UserInfo div {
+  display: flex;
+  align-items: center;
+}
+
+.UserInfo div a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.UserInfo div a:hover {
+  color: #333;
+}
+
+.UserInfo div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.UserInfo div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #000;
+  color: rgb(243, 13, 13);
+}
+
+
+.UserInfo div button {
+  margin-left: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.UserInfo div button:hover {
+  background-color: #333;
+}
+

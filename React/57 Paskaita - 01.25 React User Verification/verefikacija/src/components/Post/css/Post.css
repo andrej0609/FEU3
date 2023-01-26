@@ -1,0 +1,52 @@
+.Post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Post img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.Post span {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.Post button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Post button:hover {
+  background-color: #333;
+}
+
+.Post hr {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.Post h1 {
+  margin: 0;
+}
+
+.Post p {
+  margin: 10px;
+}
+

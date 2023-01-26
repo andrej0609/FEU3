@@ -1,27 +1,26 @@
 import UserContext from "../../contexts/UserContext";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
 
 const Register = () => {
-
-  const [formInputs, setFormInputs] = useState({
-    userName: '',
-    password: '',
-    passwordRepeat: '',
-    avatar: ''
-  });
-  const [invalidUsername, setInvalidUsername] = useState(false);
-
   const { users, addNewUser, setLoggedInUser } = useContext(UserContext);
   const navigation = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (users.find(user => user.userName === formInputs.userName)) {
-      setInvalidUsername(true);
+  const validationSchema = Yup.object().shape({
+    userName: Yup.string().required('Username is required').min(3, 'Username must be at least 3 characters'),
+    password: Yup.string().required('Password is required').min(6, 'Password must be at least 6 characters'),
+    passwordRepeat: Yup.string().required('Please repeat your password').oneOf([Yup.ref('password'), null], 'Passwords do not match'),
+    avatar: Yup.string().url('Please enter a valid URL')
+  });
+
+  const handleSubmit = (values) => {
+    if (users.find(user => user.userName === values.userName)) {
+      alert("User with such name already exists.");
     } else {
       let newUser = {
-        ...formInputs,
+        ...values,
         id: Date.now(),
         level: 'user',
         isBanned: false
@@ -34,38 +33,42 @@ const Register = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <label>
-          User name:
-          <input type="text" name="userName" value={formInputs.userName}
-            onChange={(e) => setFormInputs({ ...formInputs, userName: e.target.value })}
-          />
-        </label>
-        <label>
-          Password:
-          <input type="password" name="password" value={formInputs.password}
-            onChange={(e) => setFormInputs({ ...formInputs, password: e.target.value })}
-          />
-        </label>
-        <label>
-          Repeat Password:
-          <input type="password" name="passwordRepeat" value={formInputs.passwordRepeat}
-            onChange={(e) => setFormInputs({ ...formInputs, passwordRepeat: e.target.value })}
-          />
-        </label>
-        <label>
-          User picture:
-          <input type="url" name="avatar" value={formInputs.avatar}
-            onChange={(e) => setFormInputs({ ...formInputs, avatar: e.target.value })}
-          />
-        </label>
-        <input type="submit" value="Register" />
-      </form>
-      {
-        invalidUsername && <span>User with such name already exists.</span>
-      }
+      <div className="FormRegister">
+        <Formik
+          initialValues={{ userName: '', password: '', passwordRepeat: '', avatar: '' }}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+        >
+          {({ errors, touched }) => (
+            <Form>
+              <label>
+                User name:
+                <Field name="userName" type="text" />
+                {errors.userName && touched.userName ? <div>{errors.userName}</div> : null}
+              </label>
+              <label>
+                Password:
+                <Field name="password" type="password" />
+                {errors.password && touched.password ? <div>{errors.password}</div> : null}
+              </label>
+              <label>
+                Repeat Password:
+                <Field name="passwordRepeat" type="password" />
+                {errors.passwordRepeat && touched.passwordRepeat ? <div>{errors.passwordRepeat}</div> : null}
+              </label>
+              <label>
+                User picture:
+                <Field name="avatar" type="url" />
+                {errors.avatar && touched.avatar ? <div>{errors.avatar}</div  > : null}
+              </label>
+              <button type="submit">Register</button>
+            </Form>
+          )}
+        </Formik>
+      </div>
     </>
   );
 }
 
 export default Register;
+

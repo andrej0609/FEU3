@@ -11,11 +11,10 @@ const Post = ({ data }) => {
   const postOwner = users.find(user => user.id === data.userId);
 
   return (
-    <div style={{ border: '3px solid black' }}>
+    <div className="Post">
       <img
         src={postOwner.avatar}
         alt="user avatar"
-        style={{ width: '30px', height: 'auto' }}
       />
       <span>{postOwner.userName}</span>
       {

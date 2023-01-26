@@ -14,11 +14,11 @@ const UserInfo = () => {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
+    <div className="UserInfo">
+      <div>
         <Link to="/">HOME</Link>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <div>
         {
           (loggedInUser.level === 'admin') && <Link to="/users">Manage Users</Link>
         }
@@ -27,7 +27,6 @@ const UserInfo = () => {
           <img
             src={loggedInUser.avatar}
             alt="user avatar"
-            style={{ width: '30px', height: 'auto' }}
           />
           <span>{loggedInUser.userName}</span>
         </Link>
