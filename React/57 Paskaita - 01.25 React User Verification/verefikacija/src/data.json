@@ -32,14 +32,23 @@
       "id": 1674745105785,
       "level": "user",
       "isBanned": false
+    },
+    {
+      "userName": "qwe123",
+      "password": "qwe123",
+      "passwordRepeat": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=18",
+      "id": 1674752313448,
+      "level": "user",
+      "isBanned": false
     }
   ],
   "posts": [
     {
       "id": 1,
       "userId": 1,
-      "heading": "Pavadinimas1",
-      "content": "daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto..."
+      "heading": "Pavadinimas",
+      "content": "daug teksto... daug teksto... daug teksto... "
     },
     {
       "id": 2,
@@ -58,6 +67,12 @@
       "content": "Kazkas kitasqq",
       "id": 1674747472600,
       "userId": 0
+    },
+    {
+      "heading": "Imones Pavadinimas",
+      "content": "Kažkokia imone su juodaodžiais",
+      "id": 1674758168340,
+      "userId": 2
     }
   ]
 }

@@ -30,9 +30,20 @@ const UserProvider = ({ children }) => {
       avatar: 'https://i.pravatar.cc/150?img=3'
     }
   ]);
+  
 
   const addNewUser = (newUser) => {
-    setUsers([...users, newUser]);
+    fetch('http://localhost:5000/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newUser)
+    })
+      .then(res => res.json())
+      .then(data => {
+        setUsers([...users, data.newUser])
+      })
   }
 
   const banOrUnbanUser = (id) => {
