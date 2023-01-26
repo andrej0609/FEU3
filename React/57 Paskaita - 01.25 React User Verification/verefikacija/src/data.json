@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "level": "admin",
+      "isBanned": false,
+      "userName": "qwe123",
+      "password": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=11"
+    },
+    {
+      "id": 2,
+      "level": "user",
+      "isBanned": false,
+      "userName": "user",
+      "password": "user",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": 3,
+      "level": "user",
+      "isBanned": false,
+      "userName": "user2",
+      "password": "user2",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "userName": "user5",
+      "password": "qwe123",
+      "passwordRepeat": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=15",
+      "id": 1674745105785,
+      "level": "user",
+      "isBanned": false
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "heading": "Pavadinimas1",
+      "content": "daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto..."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "heading": "Pavadinimas2",
+      "content": "daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto..."
+    },
+    {
+      "heading": "Add new cofee",
+      "content": "Kazkas kitasqq",
+      "id": 1674746959641,
+      "userId": 2
+    },
+    {
+      "heading": "Add new cofee 356",
+      "content": "Kazkas kitasqq",
+      "id": 1674747472600,
+      "userId": 0
+    }
+  ]
+}
