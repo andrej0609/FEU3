@@ -1,5 +1,5 @@
+import UserContext from "../../contexts/UserContext";
 import { useState, useContext } from "react";
-import UserContext from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -10,25 +10,25 @@ const Register = () => {
     passwordRepeat: '',
     avatar: ''
   });
-  const [invalidUserName, setInvalidUserName] = useState(false);
+  const [invalidUsername, setInvalidUsername] = useState(false);
 
   const { users, addNewUser, setLoggedInUser } = useContext(UserContext);
-  const navigate = useNavigate();
+  const navigation = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (users.find(user => user.userName === formInputs.userName)) {
-      setInvalidUserName(true);
-      console.log('user already exists');
+      setInvalidUsername(true);
     } else {
       let newUser = {
         ...formInputs,
-        id: users.length + 1,
-        level: 'user'
+        id: Date.now(),
+        level: 'user',
+        isBanned: false
       };
       addNewUser(newUser);
-      setLoggedInUser(newUser)
-      navigate('/');
+      setLoggedInUser(newUser);
+      navigation('/');
     }
   }
 
@@ -36,7 +36,7 @@ const Register = () => {
     <>
       <form onSubmit={handleSubmit}>
         <label>
-          UserName:
+          User name:
           <input type="text" name="userName" value={formInputs.userName}
             onChange={(e) => setFormInputs({ ...formInputs, userName: e.target.value })}
           />
@@ -54,15 +54,15 @@ const Register = () => {
           />
         </label>
         <label>
-          Avatar:
-          <input type="text" name="avatar" value={formInputs.avatar}
+          User picture:
+          <input type="url" name="avatar" value={formInputs.avatar}
             onChange={(e) => setFormInputs({ ...formInputs, avatar: e.target.value })}
           />
         </label>
         <input type="submit" value="Register" />
       </form>
       {
-        invalidUserName && <span>UserName already exists</span>
+        invalidUsername && <span>User with such name already exists.</span>
       }
     </>
   );

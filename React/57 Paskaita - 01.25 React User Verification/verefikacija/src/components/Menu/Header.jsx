@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import UserContext from '../contexts/UserContext';
-import UserInfo from './UserInfo';
-import { Link } from 'react-router-dom';
-
+import UserInfo from '../User/UserInfo';
+import UserContext from "../../contexts/UserContext";
+import { useContext } from "react";
+import { Link, Outlet } from 'react-router-dom';
 
 const Header = () => {
 
@@ -13,12 +12,14 @@ const Header = () => {
       {
         loggedInUser ?
           <UserInfo /> :
-          <>
+          <div className="loginRegister">
             <Link to='/login'>Login</Link>
             <br />
             <Link to='/register'>Register</Link>
-          </>
+          </div>
       }
+      <hr />
+      <Outlet />
     </>
   );
 }

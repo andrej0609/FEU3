@@ -1,4 +1,4 @@
-import UserContext from "../contexts/UserContext";
+import UserContext from "../../contexts/UserContext";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -9,8 +9,9 @@ const LogIn = () => {
     password: ''
   });
   const [failedLogIn, setFailedLogIn] = useState(false);
+  const [userIsBanned, setUserIsBanned] = useState(false);
 
-  const navigate = useNavigate();
+  const navigation = useNavigate();
 
   const { users, setLoggedInUser } = useContext(UserContext);
 
@@ -19,9 +20,11 @@ const LogIn = () => {
 
     const loggedInUser = users.find(user => user.userName === formInputs.userName && user.password === formInputs.password);
 
-    if (loggedInUser) {
+    if (!loggedInUser.isBanned) {
       setLoggedInUser(loggedInUser);
-      navigate('/');
+      navigation('/');
+    } else if (loggedInUser.isBanned) {
+      setUserIsBanned(true);
     } else {
       setFailedLogIn(true);
     }
@@ -48,6 +51,9 @@ const LogIn = () => {
           <input type="submit" value="Log In" />
           {
             failedLogIn && <span>Wrong log in info</span>
+          }
+          {
+            userIsBanned && <span>Your user has been banned</span>
           }
         </form>
       </div>

@@ -28,10 +28,25 @@ const PostProvider = ({ children }) => {
     }
   ]);
 
+  const addNewPost = (newPost) => {
+    setPosts([...posts, newPost]);
+  }
+
+  const deletePost = (id) => {
+    setPosts(posts.filter(post => post.id !== id));
+  }
+
+  const updatePost = (id, updatedPost) => {
+    setPosts(posts.map(post => post.id.toString() === id ? { ...post, ...updatedPost } : post));
+  }
+
   return (
     <PostContext.Provider
       value={{
-        posts
+        posts,
+        addNewPost,
+        deletePost,
+        updatePost
       }}
     >
       {children}

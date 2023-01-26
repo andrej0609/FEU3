@@ -1,8 +1,7 @@
-import Post from './Post';
-import PostContext from '../contexts/PostContext';
-import UserContext from '../contexts/UserContext';
-import { useContext } from 'react';
-
+import Post from "../Post/Post";
+import PostContext from "../../contexts/PostContext";
+import UserContext from "../../contexts/UserContext";
+import { useContext } from "react";
 
 const UserPosts = () => {
 

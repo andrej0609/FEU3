@@ -1,11 +1,3 @@
-/*
-<body>
-    <div id="root"><div><form><label>UserName:<input type="text" name="userName" value=""></label><label>Password:<input type="password" name="password" value=""></label><input type="submit" value="Log In"></form></div><hr><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=2" alt="user avatar" style="width: 30px; height: auto;"><span>user</span><hr><h1>Pavadinimas0</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=3" alt="user avatar" style="width: 30px; height: auto;"><span>user2</span><hr><h1>Pavadinimas1</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=3" alt="user avatar" style="width: 30px; height: auto;"><span>user2</span><hr><h1>Pavadinimas2</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div><div style="border: 3px solid black;"><img src="https://i.pravatar.cc/150?img=2" alt="user avatar" style="width: 30px; height: auto;"><span>user</span><hr><h1>Pavadinimas3</h1><p>daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto...</p></div></div>
-  
-
-</body>
-*/
-
 body {
   margin: 0;
   padding: 0;
@@ -98,7 +90,7 @@ div p {
   text-align: justify;
 }
 
-#root > div:nth-child(1) {
+#root>div:nth-child(1) {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -107,9 +99,17 @@ div p {
   margin: 10px 0;
 }
 
-#root > a:nth-child(9)
-{
+#root>a:nth-child(9) {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+div {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;

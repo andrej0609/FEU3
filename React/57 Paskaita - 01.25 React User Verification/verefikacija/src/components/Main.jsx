@@ -1,5 +1,4 @@
-import Posts from "./Posts";
-
+import Posts from "./Post/Posts";
 const Main = () => {
   return (
     <>
