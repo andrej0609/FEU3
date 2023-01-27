@@ -1,36 +1,19 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
 
   const [loggedInUser, setLoggedInUser] = useState();
+  const [users, setUsers] = useState([]);
 
-  const [users, setUsers] = useState([
-    {
-      id: 0,
-      level: 'admin',
-      isBanned: false,
-      userName: 'admin',
-      password: 'admin',
-      avatar: 'https://i.pravatar.cc/150?img=11'
-    }, {
-      id: 1,
-      level: 'user',
-      isBanned: false,
-      userName: 'user',
-      password: 'user',
-      avatar: 'https://i.pravatar.cc/150?img=2'
-    }, {
-      id: 2,
-      level: 'user',
-      isBanned: false,
-      userName: 'user2',
-      password: 'user2',
-      avatar: 'https://i.pravatar.cc/150?img=3'
-    }
-  ]);
-  
+  useEffect(() => {
+    fetch('http://localhost:5000/users')
+      .then(res => res.json())
+      .then(data => {
+        setUsers(data);
+      })
+  }, []);
 
   const addNewUser = (newUser) => {
     fetch('http://localhost:5000/users', {

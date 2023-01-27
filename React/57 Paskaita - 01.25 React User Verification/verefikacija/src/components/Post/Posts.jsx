@@ -1,29 +1,34 @@
-import PostContext from "../../contexts/PostContext";
-import UserContext from "../../contexts/UserContext";
-import { useContext } from "react";
-import Post from "./Post";
+import React, { useContext } from 'react';
+import PostContext from '../../contexts/PostContext';
+import UserContext from '../../contexts/UserContext';
+import Post from './Post';
+
 
 const Posts = () => {
-
   const { posts } = useContext(PostContext);
   const { users } = useContext(UserContext);
 
-  const bannedUsers = users.map(user => user.isBanned && user.id).filter(item => item !== false);
-  const availablePosts = posts.filter(post => !bannedUsers.includes(post.userId));
+  const activeUsers = users.filter(user => {
+    return posts.some(post => post.userId === user.id)
+  });
 
   return (
     <>
       {
-        availablePosts.map(post =>
-          <Post
-            key={post.id}
-            data={post}
-          />
-        )
+        activeUsers.map(user => (
+          <div key={user.id}>
+            <div>
+              {
+                posts.filter(post => post.userId === user.id).map(post => (
+                  <Post key={post.id} data={post} />
+                ))
+              }
+            </div>
+          </div>
+        ))
       }
     </>
   );
 }
 
 export default Posts;
-

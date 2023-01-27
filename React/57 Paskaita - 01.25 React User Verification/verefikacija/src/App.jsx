@@ -20,7 +20,6 @@ const App = () => {
           <Route path="/newPost" element={<NewPostForm />} />
           <Route path="/editPost/:id" element={<EditPostForm />} />
         </Route>
-
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

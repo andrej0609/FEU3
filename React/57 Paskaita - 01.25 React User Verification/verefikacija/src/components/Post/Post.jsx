@@ -3,7 +3,7 @@ import PostContext from "../../contexts/PostContext";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-const Post = ({ data }) => {
+const Post = ({ data, postContent }) => {
 
   const { users, loggedInUser } = useContext(UserContext);
   const { deletePost } = useContext(PostContext);
@@ -27,6 +27,7 @@ const Post = ({ data }) => {
       <hr />
       <h1>{data.heading}</h1>
       <p>{data.content}</p>
+      <p>{postContent}</p>
     </div>
   );
 }

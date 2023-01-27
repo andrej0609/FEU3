@@ -4,8 +4,8 @@
       "id": 1,
       "level": "admin",
       "isBanned": false,
-      "userName": "qwe123",
-      "password": "qwe123",
+      "userName": "admin",
+      "password": "admin",
       "avatar": "https://i.pravatar.cc/150?img=11"
     },
     {
@@ -41,38 +41,53 @@
       "id": 1674752313448,
       "level": "user",
       "isBanned": false
+    },
+    {
+      "userName": "asd123",
+      "password": "asd123",
+      "passwordRepeat": "asd123",
+      "avatar": "https://i.pravatar.cc/150?img=25",
+      "id": 1674814216483,
+      "level": "user",
+      "isBanned": false
     }
   ],
   "posts": [
     {
       "id": 1,
       "userId": 1,
-      "heading": "Pavadinimas",
-      "content": "daug teksto... daug teksto... daug teksto... "
+      "heading": "Digital Advertising Manager",
+      "content": "Your monthly salary will be between 1100 -3000 EUR (gross), depending on your level of experience"
     },
     {
-      "id": 2,
-      "userId": 1,
-      "heading": "Pavadinimas2",
-      "content": "daug teksto... daug teksto... daug teksto... daug teksto...daug teksto... daug teksto..."
-    },
-    {
-      "heading": "Add new cofee",
-      "content": "Kazkas kitasqq",
-      "id": 1674746959641,
-      "userId": 2
-    },
-    {
-      "heading": "Add new cofee 356",
-      "content": "Kazkas kitasqq",
-      "id": 1674747472600,
-      "userId": 0
-    },
-    {
-      "heading": "Imones Pavadinimas",
-      "content": "Kažkokia imone su juodaodžiais",
+      "heading": "Vaikas su patirtimi",
+      "content": "Atlyginimas: 1650 – 1900 Eur bruto",
       "id": 1674758168340,
       "userId": 2
+    },
+    {
+      "heading": "TEISININKAS (-Ė)",
+      "content": "DARBO VIETA: AB \"Vilniaus paukštynas\", Rudamina, Vilniaus r. ir/ arba AB \"Kaišiadorių paukštynas\", Paukšininkų g. 15, Kaišiadorys.",
+      "id": 1674815866003,
+      "userId": 1674752313448
+    },
+    {
+      "heading": "Rinkodaros koordinatorius (-ė)",
+      "content": "1700-2000 €/mėn. neatskaičius mokesčių Altyginimą sudaro fiksuota dalis bei papildomi motyvaciniai priedai priklausantys nuo darbo rezultatų (iškeltų tikslų vykdymo).",
+      "id": 1674816202387,
+      "userId": 1674745105785
+    },
+    {
+      "heading": "MARKETINGO SPECIALISTĖ (-AS)",
+      "content": "1000-2000 €/mėn. į rankas Atlyginimas tiesiogiai priklausys nuo veiklos rezultatų ir kompetencijų :)",
+      "id": 1674817712339,
+      "userId": 1674814216483
+    }
+  ],
+  "liked": [
+    {
+      "userId": 1,
+      "postId": 1
     }
   ]
 }
