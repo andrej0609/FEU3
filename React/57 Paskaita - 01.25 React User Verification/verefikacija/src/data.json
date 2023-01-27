@@ -50,6 +50,15 @@
       "id": 1674814216483,
       "level": "user",
       "isBanned": false
+    },
+    {
+      "userName": "andrejus",
+      "password": "qwe123",
+      "passwordRepeat": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=33",
+      "id": 1674818528018,
+      "level": "user",
+      "isBanned": false
     }
   ],
   "posts": [
@@ -82,6 +91,24 @@
       "content": "1000-2000 €/mėn. į rankas Atlyginimas tiesiogiai priklausys nuo veiklos rezultatų ir kompetencijų :)",
       "id": 1674817712339,
       "userId": 1674814216483
+    },
+    {
+      "heading": "Personalo analitikas (-ė)",
+      "content": "Nuo 2200 €/mėn. neatskaičius mokesčių",
+      "id": 1674818414667,
+      "userId": 1674752313448
+    },
+    {
+      "heading": "Sales Relationships Manager wanted!",
+      "content": "Happy Wednesdays and short Fridays.",
+      "id": 1674818468050,
+      "userId": 3
+    },
+    {
+      "heading": "TELEKOMUNIKACIJŲ INŽINIERIUS",
+      "content": "Gali būti be patirties - apmokome.",
+      "id": 1674818562306,
+      "userId": 1674818528018
     }
   ],
   "liked": [

@@ -11,24 +11,26 @@ const Post = ({ data, postContent }) => {
   const postOwner = users.find(user => user.id === data.userId);
 
   return (
-    <div className="Post">
-      <img
-        src={postOwner.avatar}
-        alt="user avatar"
-      />
-      <span>{postOwner.userName}</span>
-      {
-        loggedInUser && loggedInUser.id === postOwner.id &&
-        <>
-          <button onClick={() => deletePost(data.id)}>Delete</button>
-          <button><Link to={`/editPost/${data.id}`}>Edit</Link></button>
-        </>
-      }
-      <hr />
-      <h1>{data.heading}</h1>
-      <p>{data.content}</p>
-      <p>{postContent}</p>
-    </div>
+    <>
+      <div className="Post">
+        <img
+          src={postOwner.avatar}
+          alt="user avatar"
+        />
+        <span>{postOwner.userName}</span>
+        {
+          loggedInUser && loggedInUser.id === postOwner.id &&
+          <>
+            <button onClick={() => deletePost(data.id)}>Delete</button>
+            <button><Link to={`/editPost/${data.id}`}>Edit</Link></button>
+          </>
+        }
+        <hr />
+        <h1>{data.heading}</h1>
+        <p>{data.content}</p>
+        <p>{postContent}</p>
+      </div>
+    </>
   );
 }
 

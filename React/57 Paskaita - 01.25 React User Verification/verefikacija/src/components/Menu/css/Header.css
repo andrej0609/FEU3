@@ -1,11 +1,3 @@
-/*
-<div className="loginRegister">
-            <Link to='/login'>Login</Link>
-            <br />
-            <Link to='/register'>Register</Link>
-          </div>
-*/
-
 .loginRegister
 {
   display: flex;
