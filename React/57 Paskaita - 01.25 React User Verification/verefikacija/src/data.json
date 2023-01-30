@@ -59,6 +59,15 @@
       "id": 1674818528018,
       "level": "user",
       "isBanned": false
+    },
+    {
+      "userName": "something",
+      "password": "qwe123",
+      "passwordRepeat": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=39",
+      "id": 1675021633871,
+      "level": "user",
+      "isBanned": false
     }
   ],
   "posts": [
@@ -109,12 +118,26 @@
       "content": "Gali būti be patirties - apmokome.",
       "id": 1674818562306,
       "userId": 1674818528018
+    },
+    {
+      "heading": "VIEŠŲJŲ PIRKIMŲ SPECIALISTAS (-Ė)",
+      "content": "Laisvę kurti ir įgyvendinti idėjas.",
+      "id": 1675021672457,
+      "userId": 1675021633871
     }
   ],
   "liked": [
     {
-      "userId": 1,
-      "postId": 1
+      "id": 1674814216483,
+      "userId": 1674818562306
+    },
+    {
+      "id": 1675021633871,
+      "userId": 1674758168340
+    },
+    {
+      "id": 1,
+      "userId": 1674818414667
     }
   ]
 }

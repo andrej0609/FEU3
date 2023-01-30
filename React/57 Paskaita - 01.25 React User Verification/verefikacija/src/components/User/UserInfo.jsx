@@ -23,6 +23,7 @@ const UserInfo = () => {
           (loggedInUser.level === 'admin') && <Link to="/users">Manage Users</Link>
         }
         <Link to="/newPost">Add new post</Link>
+        <Link to="/likedPosts">Liked Posts</Link>
         <Link to="/user">
           <img
             src={loggedInUser.avatar}

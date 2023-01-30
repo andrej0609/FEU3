@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Post = ({ data, postContent }) => {
 
   const { users, loggedInUser } = useContext(UserContext);
-  const { deletePost } = useContext(PostContext);
+  const { deletePost, handleLike, handleDislike } = useContext(PostContext);
 
   const postOwner = users.find(user => user.id === data.userId);
 
@@ -29,6 +29,13 @@ const Post = ({ data, postContent }) => {
         <h1>{data.heading}</h1>
         <p>{data.content}</p>
         <p>{postContent}</p>
+        {
+          loggedInUser && loggedInUser.id !== postOwner.id &&
+          <>
+            <button onClick={() => handleLike(loggedInUser.id, data.id)}>Like</button>
+            <button onClick={() => handleDislike(loggedInUser.id, data.id)}>Dislike</button>
+          </>
+        }
       </div>
     </>
   );

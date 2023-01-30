@@ -8,6 +8,7 @@ import UsersPage from './components/User/UsersPage';
 import NewPostForm from './components/Post/NewPostForm';
 import EditPostForm from './components/Post/EditpostForm';
 import { Routes, Route } from 'react-router-dom';
+import FavoritesPage from './components/User/FavoritesPage';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/users" element={<UsersPage />} />
           <Route path="/newPost" element={<NewPostForm />} />
           <Route path="/editPost/:id" element={<EditPostForm />} />
+          <Route path="/likedPosts" element={<FavoritesPage />} />
         </Route>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
