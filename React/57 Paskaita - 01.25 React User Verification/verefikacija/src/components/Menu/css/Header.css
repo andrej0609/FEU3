@@ -1,5 +1,4 @@
-.loginRegister
-{
+.loginRegister {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,34 +7,43 @@
   margin-top: 20px;
 }
 
-.loginRegister a
-{
+.loginRegister a {
   text-decoration: none;
   color: #000;
   font-size: 20px;
   font-weight: 500;
 }
 
-.loginRegister a:hover
-{
+.loginRegister a:hover {
   color: #f00;
 }
 
-.loginRegister a:active
-{
+.loginRegister a:active {
   color: #0f0;
 }
 
 hr {
+  border: none;
+  margin: 30px 0;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='rgb(51, 122, 183)' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-2,10,-2 s 5,2,10,2 c 5,0,5,-2,10,-2 s 5,2,10,2'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  padding-bottom: 4px;
+  background-size: auto 4px;
+}
+
+#root>div.UserInfo>div:nth-child(2)>a:nth-child(3):hover {
+  color: #f00;
+}
+
+#root>div.UserInfo>div:nth-child(2)>a:nth-child(4):hover {
+  color: #f00;
+}
+
+#root>hr {
+  border: 0;
+  height: 4px;
   width: 100%;
-  border: 1px solid #000;
+  margin: 30px 0;
+  background-image: linear-gradient(to right, #BFE2FF 50%, #337AB7 50%, #337AB7 60%, #ff9100 60%, #ff9100 70%, #05b5e6 70%, #05b5e6 80%, #b448b8 80%, #b448b8 90%, #BFE2FF 90%, #BFE2FF 100%);
 }
-
-#root > div.UserInfo > div:nth-child(2) > a:nth-child(3):hover {
-  color: #f00;
-}
-
-#root > div.UserInfo > div:nth-child(2) > a:nth-child(4):hover {
-  color: #f00;
-}
-

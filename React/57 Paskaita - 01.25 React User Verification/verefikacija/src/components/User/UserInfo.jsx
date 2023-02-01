@@ -30,7 +30,8 @@ const UserInfo = () => {
             src={loggedInUser.avatar}
             alt="user avatar"
           />
-          <span>{loggedInUser.userName}</span>
+          <span className="Username">{loggedInUser.userName}</span>
+          <span className="Role">{loggedInUser.level}</span>
         </Link>
         <button onClick={() => logOutUser()}>LogOut</button>
       </div>

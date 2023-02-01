@@ -14,11 +14,10 @@ const Header = () => {
           <UserInfo /> :
           <div className="loginRegister">
             <Link to='/login'>Login</Link>
-            <br />
             <Link to='/register'>Register</Link>
           </div>
       }
-      <hr />
+      <hr className='line' />
       <Outlet />
     </>
   );
