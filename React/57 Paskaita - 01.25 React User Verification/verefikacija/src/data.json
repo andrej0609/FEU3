@@ -68,15 +68,6 @@
       "id": 1675021633871,
       "level": "user",
       "isBanned": false
-    },
-    {
-      "userName": "zxc123",
-      "password": "qwe123",
-      "passwordRepeat": "qwe123",
-      "avatar": "https://i.pravatar.cc/150?img=66",
-      "id": 1675235609113,
-      "level": "user",
-      "isBanned": false
     }
   ],
   "posts": [
@@ -140,7 +131,7 @@
     {
       "userName": "admin",
       "avatar": "https://i.pravatar.cc/150?img=55",
-      "message": "Hi, I am looking for a housekeeper. Please contact me.",
+      "message": "Hi, I am looking for a housekeeper. Please contact me..",
       "timeStamp": 1675162841080,
       "id": "Lof8jrzSQpozTFzjUlrZ4"
     },

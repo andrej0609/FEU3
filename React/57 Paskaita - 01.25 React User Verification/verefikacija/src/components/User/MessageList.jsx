@@ -1,7 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { useContext } from 'react';
+import { useEffect, useContext, useState } from 'react';
 import UserContext from '../../contexts/UserContext';
 import Monkey from '../img/monkey.gif'
 import { nanoid } from 'nanoid';
