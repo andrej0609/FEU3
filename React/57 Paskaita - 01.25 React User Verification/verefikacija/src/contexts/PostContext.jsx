@@ -64,7 +64,7 @@ const PostProvider = ({ children }) => {
     await fetch('http://localhost:5000/liked', {
       method: 'POST',
       body: JSON.stringify({
-        id: Date.now(),
+        id: id,
         userId,
         avatar,
         heading,
