@@ -24,6 +24,7 @@ const UserInfo = () => {
         }
         <Link to="/newPost">Add new post</Link>
         <Link to="/likedPosts">Liked Posts</Link>
+        <Link to="/messages">Messages</Link>
         <Link to="/user">
           <img
             src={loggedInUser.avatar}

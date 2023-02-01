@@ -1,0 +1,56 @@
+.Liked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Liked div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  border: 1px solid #000;
+}
+
+.Liked img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.Liked h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.Liked p {
+  font-size: 1rem;
+}
+
+.Liked button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.Liked button:hover {
+  background-color: #fff;
+  color: #000;
+}

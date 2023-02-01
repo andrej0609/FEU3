@@ -4,9 +4,8 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 const Post = ({ data, postContent }) => {
-
   const { users, loggedInUser } = useContext(UserContext);
-  const { deletePost, handleLike, handleDislike } = useContext(PostContext);
+  const { deletePost, handleLike } = useContext(PostContext);
 
   const postOwner = users.find(user => user.id === data.userId);
 
@@ -32,10 +31,14 @@ const Post = ({ data, postContent }) => {
         {
           loggedInUser && loggedInUser.id !== postOwner.id &&
           <>
-            <button onClick={() => handleLike(loggedInUser.id, data.id)}>Like</button>
-            <button onClick={() => handleDislike(loggedInUser.id, data.id)}>Dislike</button>
+            <button onClick={() => handleLike(data.id, loggedInUser.id, postOwner.avatar, data.heading, data.content)}>
+              {
+                data.likes > 0 ? "Dislike" : "Like"}</button>
           </>
         }
+      </div>
+      <div className="like-count">
+        Likes: {data.likes}
       </div>
     </>
   );

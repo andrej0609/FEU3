@@ -14,17 +14,7 @@ const PostProvider = ({ children }) => {
     async function fetchData() {
       const res = await fetch('http://localhost:5000/posts');
       const data = await res.json();
-      setPosts(data);
-      setLoading(false);
-    }
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    async function fetchData() {
-      const res = await fetch('http://localhost:5000/liked');
-      const data = await res.json();
-      setLiked(data);
+      setPosts(data.map(post => ({ ...post, likes: 0 })));
       setLoading(false);
     }
     fetchData();
@@ -64,22 +54,36 @@ const PostProvider = ({ children }) => {
   }
 
   const handleLike = async (id, userId, avatar, heading, content) => {
+    const likedPost = liked.find(post => post.id === id && post.userId === userId);
+
+    if (likedPost) {
+      handleDislike(likedPost.id);
+      return;
+    }
+
     await fetch('http://localhost:5000/liked', {
       method: 'POST',
-      body: JSON.stringify({ id, userId, avatar, heading, content }),
+      body: JSON.stringify({
+        id: Date.now(),
+        userId,
+        avatar,
+        heading,
+        content
+      }),
       headers: { 'Content-Type': 'application/json' }
     });
+
     setLiked([...liked, { id, userId, avatar, heading, content }]);
-  }
-
-
+    setPosts(posts.map(post => post.id === id ? { ...post, likes: post.likes + 1 } : post));
+  };
 
   const handleDislike = async (id) => {
     await fetch(`http://localhost:5000/liked/${id}`, {
       method: 'DELETE'
     });
-    setLiked(liked.filter(like => like.id !== id));
-  }
+    setLiked(liked.filter(post => post.id !== id));
+    setPosts(posts.map(post => post.id === id ? { ...post, likes: post.likes - 1 } : post));
+  };
 
 
   return (

@@ -6,6 +6,8 @@
 @import url('./components/Post/css/Post.css');
 @import url('./components/User/css/UserCard.css');
 @import url('./components/User/css/UserInfo.css');
+@import url('./components/User/css/FavoritePage.css');
+@import url('./components/User/css/MessageList.css');
 
 body {
   margin: 0;

@@ -6,7 +6,7 @@
       "isBanned": false,
       "userName": "admin",
       "password": "admin",
-      "avatar": "https://i.pravatar.cc/150?img=11"
+      "avatar": "https://i.pravatar.cc/150?img=55"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "isBanned": false,
       "userName": "user2",
       "password": "user2",
-      "avatar": "https://i.pravatar.cc/150?img=3"
+      "avatar": "https://i.pravatar.cc/150?img=66"
     },
     {
       "userName": "user5",
@@ -66,6 +66,15 @@
       "passwordRepeat": "qwe123",
       "avatar": "https://i.pravatar.cc/150?img=39",
       "id": 1675021633871,
+      "level": "user",
+      "isBanned": false
+    },
+    {
+      "userName": "zxc123",
+      "password": "qwe123",
+      "passwordRepeat": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=66",
+      "id": 1675235609113,
       "level": "user",
       "isBanned": false
     }
@@ -126,18 +135,42 @@
       "userId": 1675021633871
     }
   ],
-  "liked": [
+  "liked": [],
+  "messages": [
     {
-      "id": 1674814216483,
-      "userId": 1674818562306
+      "userName": "admin",
+      "avatar": "https://i.pravatar.cc/150?img=55",
+      "message": "Hi, I am looking for a housekeeper. Please contact me.",
+      "timeStamp": 1675162841080,
+      "id": "Lof8jrzSQpozTFzjUlrZ4"
     },
     {
-      "id": 1675021633871,
-      "userId": 1674758168340
+      "userName": "something",
+      "avatar": "https://i.pravatar.cc/150?img=39",
+      "message": "Hello, nice to meet you. I will contact you as soon as possible.",
+      "timeStamp": 1675162855453,
+      "id": "DNmBRL2CAF8bDYeJWlVM9"
     },
     {
-      "id": 1,
-      "userId": 1674818414667
+      "userName": "user",
+      "avatar": "https://i.pravatar.cc/150?img=2",
+      "message": "How To Tell if Someone Is Scamming You?",
+      "timeStamp": 1675162867368,
+      "id": "kIyBd7S9rbjlbUwWhpDru"
+    },
+    {
+      "userName": "user5",
+      "avatar": "https://i.pravatar.cc/150?img=15",
+      "message": "You can call to police...",
+      "timeStamp": 1675162880486,
+      "id": "TBKi2DFhRbc9SL4MQBhLn"
+    },
+    {
+      "userName": "qwe123",
+      "avatar": "https://i.pravatar.cc/150?img=18",
+      "message": "What are you doing?",
+      "timeStamp": 1675181032271,
+      "id": "LGy2OyNTnoMWXrPIKsHx_"
     }
   ]
 }

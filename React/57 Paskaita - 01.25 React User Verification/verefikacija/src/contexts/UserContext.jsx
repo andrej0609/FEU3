@@ -8,12 +8,14 @@ const UserProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/users')
-      .then(res => res.json())
-      .then(data => {
-        setUsers(data);
-      })
+    const fetchUsers = async () => {
+      const res = await fetch('http://localhost:5000/users');
+      const data = await res.json();
+      setUsers(data);
+    }
+    fetchUsers();
   }, []);
+
 
   const addNewUser = (newUser) => {
     fetch('http://localhost:5000/users', {
@@ -23,10 +25,7 @@ const UserProvider = ({ children }) => {
       },
       body: JSON.stringify(newUser)
     })
-      .then(res => res.json())
-      .then(data => {
-        setUsers([...users, data.newUser])
-      })
+    setUsers([...users, newUser]);
   }
 
   const banOrUnbanUser = (id) => {
